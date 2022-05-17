@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ButtonGalleryView: View {
-    var body: some View {
-        Text("ButtonGalleryView")
+  var body: some View {
+    NavigationView {
+      VStack {
+
+      }
+      .navigationBarTitleDisplayMode(.inline)
+      .navigationTitle("Buttons")
     }
+  }
 }
 
 struct ButtonGalleryView_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtonGalleryView()
-    }
+  static var previews: some View {
+    ButtonGalleryView()
+  }
 }

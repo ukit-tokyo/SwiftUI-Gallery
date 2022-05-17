@@ -81,6 +81,45 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
+		B695E6A82833945F007C69AA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B695E6A928339472007C69AA /* Atoms */,
+				B695E6AA2833947D007C69AA /* Templates */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B695E6A928339472007C69AA /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				B695E6AB283394CC007C69AA /* Buttons */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+		B695E6AA2833947D007C69AA /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		B695E6AB283394CC007C69AA /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B695E6AC283394D6007C69AA /* ButtonStyles */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B695E6AC283394D6007C69AA /* ButtonStyles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
 		B6E5C46C28337A8C001A5951 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +146,7 @@
 				B6E5C47828337A8C001A5951 /* GalleryApp.swift */,
 				B6E5C47A28337A8C001A5951 /* GalleryView.swift */,
 				B640E703283382DD0067D6F3 /* Pages */,
+				B695E6A82833945F007C69AA /* Components */,
 				B6E5C47C28337A8D001A5951 /* Assets.xcassets */,
 				B6E5C47E28337A8D001A5951 /* Preview Content */,
 			);
