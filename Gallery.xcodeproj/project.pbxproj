@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640E704283383120067D6F3 /* ButtonGalleryView.swift */; };
+		B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */; };
+		B695E6B128339B39007C69AA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B028339B39007C69AA /* Colors.swift */; };
 		B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47828337A8C001A5951 /* GalleryApp.swift */; };
 		B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47A28337A8C001A5951 /* GalleryView.swift */; };
 		B6E5C47D28337A8D001A5951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E5C47C28337A8D001A5951 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		B640E704283383120067D6F3 /* ButtonGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGalleryView.swift; sourceTree = "<group>"; };
+		B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFillButtonStyle.swift; sourceTree = "<group>"; };
+		B695E6B028339B39007C69AA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B6E5C47528337A8C001A5951 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C47828337A8C001A5951 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
 		B6E5C47A28337A8C001A5951 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
@@ -116,8 +120,25 @@
 		B695E6AC283394D6007C69AA /* ButtonStyles */ = {
 			isa = PBXGroup;
 			children = (
+				B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */,
 			);
 			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+		B695E6AF28339B05007C69AA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B695E6B22833A1CA007C69AA /* ViewModifiers */,
+				B695E6B028339B39007C69AA /* Colors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B695E6B22833A1CA007C69AA /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		B6E5C46C28337A8C001A5951 = {
@@ -147,6 +168,7 @@
 				B6E5C47A28337A8C001A5951 /* GalleryView.swift */,
 				B640E703283382DD0067D6F3 /* Pages */,
 				B695E6A82833945F007C69AA /* Components */,
+				B695E6AF28339B05007C69AA /* Utilities */,
 				B6E5C47C28337A8D001A5951 /* Assets.xcassets */,
 				B6E5C47E28337A8D001A5951 /* Preview Content */,
 			);
@@ -310,6 +332,8 @@
 			files = (
 				B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */,
 				B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */,
+				B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */,
+				B695E6B128339B39007C69AA /* Colors.swift in Sources */,
 				B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
