@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640E704283383120067D6F3 /* ButtonGalleryView.swift */; };
 		B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47828337A8C001A5951 /* GalleryApp.swift */; };
-		B6E5C47B28337A8C001A5951 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47A28337A8C001A5951 /* ContentView.swift */; };
+		B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47A28337A8C001A5951 /* GalleryView.swift */; };
 		B6E5C47D28337A8D001A5951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E5C47C28337A8D001A5951 /* Assets.xcassets */; };
 		B6E5C48028337A8D001A5951 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E5C47F28337A8D001A5951 /* Preview Assets.xcassets */; };
 		B6E5C48A28337A8D001A5951 /* GalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C48928337A8D001A5951 /* GalleryTests.swift */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B640E704283383120067D6F3 /* ButtonGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGalleryView.swift; sourceTree = "<group>"; };
 		B6E5C47528337A8C001A5951 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C47828337A8C001A5951 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
-		B6E5C47A28337A8C001A5951 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B6E5C47A28337A8C001A5951 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		B6E5C47C28337A8D001A5951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E5C47F28337A8D001A5951 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6E5C48528337A8D001A5951 /* GalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B640E703283382DD0067D6F3 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				B640E704283383120067D6F3 /* ButtonGalleryView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		B6E5C46C28337A8C001A5951 = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				B6E5C47828337A8C001A5951 /* GalleryApp.swift */,
-				B6E5C47A28337A8C001A5951 /* ContentView.swift */,
+				B6E5C47A28337A8C001A5951 /* GalleryView.swift */,
+				B640E703283382DD0067D6F3 /* Pages */,
 				B6E5C47C28337A8D001A5951 /* Assets.xcassets */,
 				B6E5C47E28337A8D001A5951 /* Preview Content */,
 			);
@@ -257,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E5C47B28337A8C001A5951 /* ContentView.swift in Sources */,
+				B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */,
+				B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */,
 				B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
