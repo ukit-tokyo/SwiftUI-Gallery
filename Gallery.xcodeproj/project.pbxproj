@@ -12,6 +12,7 @@
 		B695E6B128339B39007C69AA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B028339B39007C69AA /* Colors.swift */; };
 		B695E6B62833B078007C69AA /* RoundBorderButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B52833B078007C69AA /* RoundBorderButtonStyle.swift */; };
 		B695E6B828349738007C69AA /* CapsuleFillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B728349738007C69AA /* CapsuleFillButtonStyle.swift */; };
+		B695E6BA28349829007C69AA /* CapsuleBorderButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B928349829007C69AA /* CapsuleBorderButtonStyle.swift */; };
 		B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47828337A8C001A5951 /* GalleryApp.swift */; };
 		B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47A28337A8C001A5951 /* GalleryView.swift */; };
 		B6E5C47D28337A8D001A5951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E5C47C28337A8D001A5951 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		B695E6B028339B39007C69AA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B695E6B52833B078007C69AA /* RoundBorderButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBorderButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6B728349738007C69AA /* CapsuleFillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleFillButtonStyle.swift; sourceTree = "<group>"; };
+		B695E6B928349829007C69AA /* CapsuleBorderButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleBorderButtonStyle.swift; sourceTree = "<group>"; };
 		B6E5C47528337A8C001A5951 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C47828337A8C001A5951 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
 		B6E5C47A28337A8C001A5951 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
@@ -125,8 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */,
-				B695E6B728349738007C69AA /* CapsuleFillButtonStyle.swift */,
 				B695E6B52833B078007C69AA /* RoundBorderButtonStyle.swift */,
+				B695E6B728349738007C69AA /* CapsuleFillButtonStyle.swift */,
+				B695E6B928349829007C69AA /* CapsuleBorderButtonStyle.swift */,
 			);
 			path = ButtonStyles;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */,
+				B695E6BA28349829007C69AA /* CapsuleBorderButtonStyle.swift in Sources */,
 				B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */,
 				B695E6B828349738007C69AA /* CapsuleFillButtonStyle.swift in Sources */,
 				B695E6B62833B078007C69AA /* RoundBorderButtonStyle.swift in Sources */,

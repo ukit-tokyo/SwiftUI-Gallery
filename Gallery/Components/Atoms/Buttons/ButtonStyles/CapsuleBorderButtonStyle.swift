@@ -1,21 +1,20 @@
 //
-//  RoundBorderButtonStyle.swift
+//  CapsuleBorderButtonStyle.swift
 //  Gallery
 //
-//  Created by Taichi Yuki on 2022/05/17.
+//  Created by Taichi Yuki on 2022/05/18.
 //
 
 import SwiftUI
 
 /// 枠線、角丸ボタンスタイル
-struct RoundBorderButtonStyle: ButtonStyle {
+struct CapsuleBorderButtonStyle: ButtonStyle {
   struct Config {
     let backgroundColor: Color
     let foregroundColor: Color
     let borderColor: Color
     let borderWidth: CGFloat
     let font: Font
-    let radius: CGFloat
     let animated: Bool
 
     init(
@@ -24,7 +23,6 @@ struct RoundBorderButtonStyle: ButtonStyle {
       borderColor: Color = .primary,
       borderWidth: CGFloat = 2,
       font: Font,
-      radius: CGFloat,
       animated: Bool = true
     ) {
       self.backgroundColor = backgroundColor
@@ -32,7 +30,6 @@ struct RoundBorderButtonStyle: ButtonStyle {
       self.borderColor = borderColor
       self.borderWidth = borderWidth
       self.font = font
-      self.radius = radius
       self.animated = animated
     }
   }
@@ -54,7 +51,7 @@ struct RoundBorderButtonStyle: ButtonStyle {
       .foregroundColor(isEnabled ? config.foregroundColor : Color.gray)
       .font(config.font)
       .overlay(
-        RoundedRectangle(cornerRadius: config.radius)
+        Capsule()
           .stroke(isEnabled ? config.borderColor : Color.gray, lineWidth: config.borderWidth)
       )
       .scaleEffect(configuration.isPressed ? animateScale : 1)
@@ -62,10 +59,10 @@ struct RoundBorderButtonStyle: ButtonStyle {
   }
 }
 
-struct RoundBorderButtonStyle_Previews: PreviewProvider {
-  static let button: some View = Button("Round Border") {}
-    .buttonStyle(RoundBorderButtonStyle(
-      .init(font: .body.bold(), radius: 10)
+struct CapsuleBorderButtonStyle_Previews: PreviewProvider {
+  static let button: some View = Button("Capsule Border") {}
+    .buttonStyle(CapsuleBorderButtonStyle(
+      .init(font: .body.bold())
     ))
 
   static var previews: some View {
@@ -78,3 +75,4 @@ struct RoundBorderButtonStyle_Previews: PreviewProvider {
       .preferredColorScheme(.dark)
   }
 }
+
