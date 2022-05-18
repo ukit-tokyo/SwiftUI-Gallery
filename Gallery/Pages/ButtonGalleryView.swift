@@ -11,7 +11,16 @@ struct ButtonGalleryView: View {
   var body: some View {
     NavigationView {
       VStack {
-
+        FillButton(
+          theme: .primary,
+          font: .body.bold(),
+          width: 140,
+          height: 40,
+          action: {},
+          label: {
+            Text("FillButton")
+          }
+        )
       }
       .navigationBarTitleDisplayMode(.inline)
       .navigationTitle("Buttons")

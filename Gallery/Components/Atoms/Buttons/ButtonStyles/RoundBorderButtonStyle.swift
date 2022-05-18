@@ -20,8 +20,8 @@ struct RoundBorderButtonStyle: ButtonStyle {
 
     init(
       backgroundColor: Color = .clear,
-      foregroundColor: Color = .primary,
-      borderColor: Color = .primary,
+      foregroundColor: Color = .primaryRed,
+      borderColor: Color = .primaryRed,
       borderWidth: CGFloat = 2,
       font: Font,
       radius: CGFloat,

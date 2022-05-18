@@ -16,7 +16,7 @@ struct CapsuleFillButtonStyle: ButtonStyle {
     let animated: Bool
 
     init(
-      backgroundColor: Color = .primary,
+      backgroundColor: Color = .primaryRed,
       foregroundColor: Color = .white,
       font: Font,
       animated: Bool = true
