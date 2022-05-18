@@ -1,69 +1,66 @@
 //
-//  RoundFillButtonStyle.swift
+//  CapsuleFillButtonStyle.swift
 //  Gallery
 //
-//  Created by Taichi Yuki on 2022/05/17.
+//  Created by Taichi Yuki on 2022/05/18.
 //
 
 import SwiftUI
 
-/// 塗り、角丸ボタンスタイル
-struct RoundFillButtonStyle: ButtonStyle {
+/// 塗り、角が円のボタンスタイル
+struct CapsuleFillButtonStyle: ButtonStyle {
   struct Config {
     let backgroundColor: Color
     let foregroundColor: Color
     let font: Font
-    let radius: CGFloat
     let animated: Bool
-    
+
     init(
       backgroundColor: Color = .primary,
       foregroundColor: Color = .white,
       font: Font,
-      radius: CGFloat,
       animated: Bool = true
     ) {
       self.backgroundColor = backgroundColor
       self.foregroundColor = foregroundColor
       self.font = font
-      self.radius = radius
       self.animated = animated
     }
   }
-  
+
   private let config: Config
   @Environment(\.isEnabled) var isEnabled: Bool
-  
+
   init(_ config: Config) {
     self.config = config
   }
-  
+
   func makeBody(configuration: Configuration) -> some View {
     let animateScale: CGFloat = config.animated ? 0.95 : 1
     let animateDuration: Double = config.animated ? 0.2 : 0
-    
+
     return configuration.label
       .padding()
       .background(isEnabled ? config.backgroundColor : Color.gray)
       .foregroundColor(config.foregroundColor)
       .font(config.font)
-      .clipShape(RoundedRectangle(cornerRadius: config.radius))
+      .clipShape(Capsule())
       .scaleEffect(configuration.isPressed ? animateScale : 1)
       .animation(.easeOut(duration: animateDuration))
   }
 }
 
-struct RoundFillButtonStyle_Previews: PreviewProvider {
-  static let roundButton: some View = Button("Round Fill") {}
-    .buttonStyle(RoundFillButtonStyle(
-      .init(font: .body.bold(), radius: 10)
+struct CapsuleFillButtonStyle_Previews: PreviewProvider {
+  static let button: some View = Button("Capsule Fill") {}
+    .buttonStyle(CapsuleFillButtonStyle(
+      .init(font: .body.bold())
     ))
   static var previews: some View {
-    roundButton
+    button
       .previewLayout(.fixed(width: 200, height: 70))
       .preferredColorScheme(.light)
-    
-    roundButton
+
+    button
       .previewLayout(.fixed(width: 200, height: 70))
       .preferredColorScheme(.dark)
   }
