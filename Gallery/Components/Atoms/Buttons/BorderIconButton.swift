@@ -69,5 +69,3 @@ struct BorderIconButton_Previews: PreviewProvider {
       .preferredColorScheme(.dark)
   }
 }
-
-
