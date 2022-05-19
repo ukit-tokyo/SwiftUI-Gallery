@@ -10,7 +10,8 @@ import SwiftUI
 // MARK: - Themes
 enum BorderButtonTheme {
   case primary
-  case custome(
+  case monotone
+  case custom(
     borderColor: Color,
     backgroundColor: Color,
     foregroundColor: Color,
@@ -21,31 +22,36 @@ enum BorderButtonTheme {
   var borderColor: Color {
     switch self {
     case .primary: return .primaryRed
-    case .custome(let color, _, _, _, _): return color
+    case .monotone: return .label
+    case .custom(let color, _, _, _, _): return color
     }
   }
   var backgroundColor: Color {
     switch self {
     case .primary: return .clear
-    case .custome(_, let color, _, _, _): return color
+    case .monotone: return .clear
+    case .custom(_, let color, _, _, _): return color
     }
   }
   var foregroundColor: Color {
     switch self {
     case .primary: return .primaryRed
-    case .custome(_, _, let color, _, _): return color
+    case .monotone: return .label
+    case .custom(_, _, let color, _, _): return color
     }
   }
   var selectedBackgroundColor: Color {
     switch self {
     case .primary: return .primaryRed
-    case .custome(_, _, _, let color, _): return color
+    case .monotone: return .label
+    case .custom(_, _, _, let color, _): return color
     }
   }
   var selectedForegroundColor: Color {
     switch self {
     case .primary: return .white
-    case .custome(_, _, _, _, let color): return color
+    case .monotone: return .backgroundView
+    case .custom(_, _, _, _, let color): return color
     }
   }
 }

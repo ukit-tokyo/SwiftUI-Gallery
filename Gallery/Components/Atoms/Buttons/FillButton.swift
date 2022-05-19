@@ -10,15 +10,24 @@ import SwiftUI
 // MARK: - Themes
 enum FillButtonTheme {
   case primary
+  case monotone
+  case custom(
+    backgroundColor: Color,
+    foregroundColor: Color
+  )
 
   var backgroundColor: Color {
     switch self {
     case .primary: return .primaryRed
+    case .monotone: return .buttonSecondary
+    case .custom(let color, _): return color
     }
   }
   var foregroundColor: Color {
     switch self {
     case .primary: return .white
+    case .monotone: return .label
+    case .custom(_, let color): return color
     }
   }
 }
