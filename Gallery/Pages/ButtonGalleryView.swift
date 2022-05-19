@@ -25,6 +25,13 @@ struct ButtonGalleryView: View {
           font: .body.bold(),
           width: 140,
           height: 40) {}
+        BorderTextButton(
+          "BorderTextButton",
+          theme: .primary,
+          font: .body,
+          width: 180,
+          height: 40) {}
+        Spacer()
       }
       .navigationBarTitleDisplayMode(.inline)
       .navigationTitle("Buttons")
