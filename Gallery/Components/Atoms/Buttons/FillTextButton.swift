@@ -15,6 +15,7 @@ struct FillTextButton: View {
   private let font: Font
   private let width: CGFloat
   private let height: CGFloat
+  private let cornerRadius: CGFloat?
   private let animated: Bool
   private let action: () -> Void
 
@@ -24,6 +25,7 @@ struct FillTextButton: View {
     font: Font,
     width: CGFloat = .infinity,
     height: CGFloat,
+    cornerRadius: CGFloat? = nil,
     animated: Bool = true,
     action: @escaping () -> Void
   ) {
@@ -32,6 +34,7 @@ struct FillTextButton: View {
     self.font = font
     self.width = width
     self.height = height
+    self.cornerRadius = cornerRadius
     self.animated = animated
     self.action = action
   }
@@ -42,6 +45,7 @@ struct FillTextButton: View {
       font: font,
       width: width,
       height: height,
+      cornerRadius: cornerRadius,
       animated: animated,
       action: action) {
         Text(title)

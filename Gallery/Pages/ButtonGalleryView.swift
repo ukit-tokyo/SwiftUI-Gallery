@@ -11,26 +11,33 @@ struct ButtonGalleryView: View {
   var body: some View {
     NavigationView {
       VStack {
-        FillButton(
-          theme: .primary,
-          font: .body.bold(),
-          width: 140,
-          height: 40,
-          action: {}) {
-            Text("FillButton")
-          }
         FillTextButton(
           "FillTextButton",
           theme: .primary,
           font: .body.bold(),
           width: 140,
           height: 40) {}
+        FillTextButton(
+          "FillTextButton",
+          theme: .primary,
+          font: .body.bold(),
+          width: 140,
+          height: 40,
+          cornerRadius: 10) {}
         BorderTextButton(
           "BorderTextButton",
           theme: .primary,
           font: .body,
           width: 180,
           height: 40) {}
+        BorderTextButton(
+          "BorderTextButton",
+          theme: .primary,
+          font: .body,
+          width: 180,
+          height: 40,
+          cornerRadius: 10) {}
+
         Spacer()
       }
       .navigationBarTitleDisplayMode(.inline)

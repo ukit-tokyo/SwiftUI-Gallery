@@ -16,6 +16,7 @@ struct BorderTextButton: View {
   private let borderWidth: CGFloat
   private let width: CGFloat
   private let height: CGFloat
+  private let cornerRadius: CGFloat?
   private let animated: Bool
   private let action: () -> Void
 
@@ -26,6 +27,7 @@ struct BorderTextButton: View {
     borderWidth: CGFloat = 1,
     width: CGFloat = .infinity,
     height: CGFloat,
+    cornerRadius: CGFloat? = nil,
     animated: Bool = true,
     action: @escaping () -> Void
   ) {
@@ -35,6 +37,7 @@ struct BorderTextButton: View {
     self.borderWidth = borderWidth
     self.width = width
     self.height = height
+    self.cornerRadius = cornerRadius
     self.animated = animated
     self.action = action
   }
@@ -46,6 +49,7 @@ struct BorderTextButton: View {
       borderWidth: borderWidth,
       width: width,
       height: height,
+      cornerRadius: cornerRadius,
       animated: animated,
       action: action) {
         Text(title)

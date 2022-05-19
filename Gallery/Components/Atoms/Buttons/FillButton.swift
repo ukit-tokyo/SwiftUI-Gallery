@@ -31,6 +31,7 @@ struct FillButton<Label: View>: View {
   private let font: Font
   private let width: CGFloat
   private let height: CGFloat
+  private let cornerRadius: CGFloat?
   private let animated: Bool
   private let action: () -> Void
   private let label: Label
@@ -40,6 +41,7 @@ struct FillButton<Label: View>: View {
     font: Font,
     width: CGFloat = .infinity,
     height: CGFloat,
+    cornerRadius: CGFloat? = nil,
     animated: Bool = true,
     action: @escaping () -> Void,
     @ViewBuilder label: () -> Label
@@ -48,21 +50,30 @@ struct FillButton<Label: View>: View {
     self.font = font
     self.width = width
     self.height = height
+    self.cornerRadius = cornerRadius
     self.animated = animated
     self.action = action
     self.label = label()
   }
 
   var body: some View {
-    Button(action: action) {
-      label
-        .frame(maxWidth: width, maxHeight: height)
-        .background(isEnabled ? theme.backgroundColor : .gray)
-        .foregroundColor(theme.foregroundColor)
-        .font(font)
-        .clipShape(Capsule())
+    let label = label
+      .frame(maxWidth: width, maxHeight: height)
+      .background(isEnabled ? theme.backgroundColor : .gray)
+      .foregroundColor(theme.foregroundColor)
+      .font(font)
+
+    if let cornerRadius = cornerRadius {
+      Button(action: action) {
+        label.clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+      }
+      .buttonStyle(AnimationButtonStyle(animated: animated))
+    } else {
+      Button(action: action) {
+        label.clipShape(Capsule())
+      }
+      .buttonStyle(AnimationButtonStyle(animated: animated))
     }
-    .buttonStyle(AnimationButtonStyle(animated: animated))
   }
 }
 

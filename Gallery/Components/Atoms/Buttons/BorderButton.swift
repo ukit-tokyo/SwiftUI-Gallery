@@ -37,6 +37,7 @@ struct BorderButton<Label: View>: View {
   private let borderWidth: CGFloat
   private let width: CGFloat
   private let height: CGFloat
+  private let cornerRadius: CGFloat?
   private let animated: Bool
   private let action: () -> Void
   private let label: Label
@@ -47,6 +48,7 @@ struct BorderButton<Label: View>: View {
     borderWidth: CGFloat = 1,
     width: CGFloat = .infinity,
     height: CGFloat,
+    cornerRadius: CGFloat? = nil,
     animated: Bool = true,
     action: @escaping () -> Void,
     @ViewBuilder label: () -> Label
@@ -56,24 +58,36 @@ struct BorderButton<Label: View>: View {
     self.borderWidth = borderWidth
     self.width = width
     self.height = height
+    self.cornerRadius = cornerRadius
     self.animated = animated
     self.action = action
     self.label = label()
   }
 
   var body: some View {
-    Button(action: action) {
-      label
-        .frame(maxWidth: width, maxHeight: height)
-        .background(theme.backgroundColor)
-        .foregroundColor(isEnabled ? theme.foregroundColor : Color.gray)
-        .font(font)
-        .overlay(
+    let label = label
+      .frame(maxWidth: width, maxHeight: height)
+      .background(theme.backgroundColor)
+      .foregroundColor(isEnabled ? theme.foregroundColor : Color.gray)
+      .font(font)
+
+    if let cornerRadius = cornerRadius {
+      Button(action: action) {
+        label.overlay(
+          RoundedRectangle(cornerRadius: cornerRadius)
+            .stroke(isEnabled ? theme.borderColor : Color.gray, lineWidth: borderWidth)
+        )
+      }
+      .buttonStyle(AnimationButtonStyle(animated: animated))
+    } else {
+      Button(action: action) {
+        label.overlay(
           Capsule()
             .stroke(isEnabled ? theme.borderColor : Color.gray, lineWidth: borderWidth)
         )
+      }
+      .buttonStyle(AnimationButtonStyle(animated: animated))
     }
-    .buttonStyle(AnimationButtonStyle(animated: animated))
   }
 }
 
