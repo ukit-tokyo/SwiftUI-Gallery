@@ -26,6 +26,16 @@ enum BorderButtonTheme {
     case .primary: return .primaryRed
     }
   }
+  var selectedBackgroundColor: Color {
+    switch self {
+    case .primary: return .primaryRed
+    }
+  }
+  var selectedForegroundColor: Color {
+    switch self {
+    case .primary: return .white
+    }
+  }
 }
 
 // MARK: - Border Button
@@ -38,9 +48,12 @@ struct BorderButton<Label: View>: View {
   private let width: CGFloat?
   private let height: CGFloat?
   private let cornerRadius: CGFloat?
+  private let selectable: Bool
   private let animated: Bool
-  private let action: () -> Void
+  private let action: (Bool) -> Void
   private let label: Label
+
+  @State private var isSelected: Bool = false
 
   init(
     theme: BorderButtonTheme,
@@ -49,8 +62,9 @@ struct BorderButton<Label: View>: View {
     width: CGFloat? = nil,
     height: CGFloat? = nil,
     cornerRadius: CGFloat? = nil,
+    selectable: Bool = false,
     animated: Bool = true,
-    action: @escaping () -> Void,
+    action: @escaping (Bool) -> Void,
     @ViewBuilder label: () -> Label
   ) {
     self.theme = theme
@@ -59,33 +73,51 @@ struct BorderButton<Label: View>: View {
     self.width = width
     self.height = height
     self.cornerRadius = cornerRadius
+    self.selectable = selectable
     self.animated = animated
     self.action = action
     self.label = label()
   }
 
   var body: some View {
+    let bgColor = selectable && isSelected
+    ? theme.selectedBackgroundColor
+    : theme.backgroundColor
+    let fgColor = selectable && isSelected
+    ? theme.selectedForegroundColor
+    : theme.foregroundColor
+
     let label = label
       .padding()
       .frame(maxWidth: width, maxHeight: height)
-      .background(theme.backgroundColor)
-      .foregroundColor(isEnabled ? theme.foregroundColor : Color.gray)
+      .background(bgColor)
+      .foregroundColor(isEnabled ? fgColor : Color.gray)
       .font(font)
 
     if let cornerRadius = cornerRadius {
-      Button(action: action) {
-        label.overlay(
-          RoundedRectangle(cornerRadius: cornerRadius)
-            .stroke(isEnabled ? theme.borderColor : Color.gray, lineWidth: borderWidth)
-        )
+      Button(action: {
+        isSelected.toggle()
+        action(isSelected)
+      }) {
+        label
+          .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+          .overlay(
+            RoundedRectangle(cornerRadius: cornerRadius)
+              .stroke(isEnabled ? theme.borderColor : Color.gray, lineWidth: borderWidth)
+          )
       }
       .buttonStyle(AnimationButtonStyle(animated: animated))
     } else {
-      Button(action: action) {
-        label.overlay(
-          Capsule()
-            .stroke(isEnabled ? theme.borderColor : Color.gray, lineWidth: borderWidth)
-        )
+      Button(action: {
+        isSelected.toggle()
+        action(isSelected)
+      }) {
+        label
+          .clipShape(Capsule())
+          .overlay(
+            Capsule()
+              .stroke(isEnabled ? theme.borderColor : Color.gray, lineWidth: borderWidth)
+          )
       }
       .buttonStyle(AnimationButtonStyle(animated: animated))
     }
@@ -94,7 +126,7 @@ struct BorderButton<Label: View>: View {
 
 // MARK: - Preview
 struct BorderButton_Previews: PreviewProvider {
-  static let preview: some View = BorderButton(theme: .primary, font: .body, width: 140, height: 40, action: {}) {
+  static let preview: some View = BorderButton(theme: .primary, font: .body, width: 140, height: 40, action: { _ in }) {
     Text("BorderButton")
   }
   static var previews: some View {

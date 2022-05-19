@@ -11,6 +11,7 @@
 		B672CB962835F3A100C039AF /* FillTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB952835F3A100C039AF /* FillTextButton.swift */; };
 		B672CB9A28360E6600C039AF /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB9928360E6600C039AF /* BorderButton.swift */; };
 		B672CB9C283613CF00C039AF /* BorderTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB9B283613CF00C039AF /* BorderTextButton.swift */; };
+		B672CB9E2836325B00C039AF /* SelectionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB9D2836325B00C039AF /* SelectionButtonStyle.swift */; };
 		B68AE2DF2834D7A000F66647 /* AnimationButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */; };
 		B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */; };
 		B695E6B128339B39007C69AA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B028339B39007C69AA /* Colors.swift */; };
@@ -49,6 +50,7 @@
 		B672CB952835F3A100C039AF /* FillTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillTextButton.swift; sourceTree = "<group>"; };
 		B672CB9928360E6600C039AF /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		B672CB9B283613CF00C039AF /* BorderTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextButton.swift; sourceTree = "<group>"; };
+		B672CB9D2836325B00C039AF /* SelectionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButtonStyle.swift; sourceTree = "<group>"; };
 		B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFillButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6B028339B39007C69AA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				B695E6B728349738007C69AA /* CapsuleFillButtonStyle.swift */,
 				B695E6B928349829007C69AA /* CapsuleBorderButtonStyle.swift */,
 				B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */,
+				B672CB9D2836325B00C039AF /* SelectionButtonStyle.swift */,
 			);
 			path = ButtonStyles;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			files = (
 				B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */,
 				B695E6BA28349829007C69AA /* CapsuleBorderButtonStyle.swift in Sources */,
+				B672CB9E2836325B00C039AF /* SelectionButtonStyle.swift in Sources */,
 				B672CB9C283613CF00C039AF /* BorderTextButton.swift in Sources */,
 				B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */,
 				B695E6BC2834AD76007C69AA /* FillButton.swift in Sources */,

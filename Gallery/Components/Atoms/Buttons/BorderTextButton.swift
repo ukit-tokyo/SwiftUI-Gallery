@@ -17,8 +17,9 @@ struct BorderTextButton: View {
   private let width: CGFloat?
   private let height: CGFloat?
   private let cornerRadius: CGFloat?
+  private let selectable: Bool
   private let animated: Bool
-  private let action: () -> Void
+  private let action: (Bool) -> Void
 
   init(
     _ title: String,
@@ -28,8 +29,9 @@ struct BorderTextButton: View {
     width: CGFloat? = nil,
     height: CGFloat? = nil,
     cornerRadius: CGFloat? = nil,
+    selectable: Bool = false,
     animated: Bool = true,
-    action: @escaping () -> Void
+    action: @escaping (Bool) -> Void
   ) {
     self.title = title
     self.theme = theme
@@ -38,6 +40,7 @@ struct BorderTextButton: View {
     self.width = width
     self.height = height
     self.cornerRadius = cornerRadius
+    self.selectable = selectable
     self.animated = animated
     self.action = action
   }
@@ -50,6 +53,7 @@ struct BorderTextButton: View {
       width: width,
       height: height,
       cornerRadius: cornerRadius,
+      selectable: selectable,
       animated: animated,
       action: action) {
         Text(title)
@@ -63,7 +67,7 @@ struct BorderTextButton_Previews: PreviewProvider {
     theme: .primary,
     font: .body,
     width: 180,
-    height: 40) {}
+    height: 40) { _ in }
 
   static var previews: some View {
     preview

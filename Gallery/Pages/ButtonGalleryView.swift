@@ -26,15 +26,19 @@ struct ButtonGalleryView: View {
           "BorderTextButton",
           theme: .primary,
           font: .body,
-          height: 40
-        ) {}
+          height: 40,
+          selectable: false) { isSelected in
+            print(isSelected)
+          }
         BorderTextButton(
           "BorderTextButton",
           theme: .primary,
           font: .body,
           height: 40,
-          cornerRadius: 10
-        ) {}
+          cornerRadius: 10,
+          selectable: true) { isSelected in
+            print(isSelected)
+          }
 
         Spacer()
       }
