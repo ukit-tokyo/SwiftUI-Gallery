@@ -16,11 +16,15 @@ struct ButtonGalleryView: View {
           font: .body.bold(),
           width: 140,
           height: 40,
-          action: {},
-          label: {
+          action: {}) {
             Text("FillButton")
           }
-        )
+        FillTextButton(
+          "FillTextButton",
+          theme: .primary,
+          font: .body.bold(),
+          width: 140,
+          height: 40) {}
       }
       .navigationBarTitleDisplayMode(.inline)
       .navigationTitle("Buttons")

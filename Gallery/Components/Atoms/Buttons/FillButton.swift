@@ -29,8 +29,8 @@ struct FillButton<Label: View>: View {
 
   private let theme: FillButtonTheme
   private let font: Font
-  private let width: CGFloat?
-  private let height: CGFloat?
+  private let width: CGFloat
+  private let height: CGFloat
   private let animated: Bool
   private let action: () -> Void
   private let label: Label
