@@ -25,6 +25,7 @@ struct GalleryView: View {
           Text(row.title)
         }
       }
+      .navigationBarTitleDisplayMode(.large)
       .navigationTitle("Gallery")
     }
   }
