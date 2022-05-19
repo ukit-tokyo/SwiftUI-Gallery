@@ -21,6 +21,12 @@ struct ButtonGalleryView: View {
         font: .body.bold(),
         height: 40,
         cornerRadius: 10) {}
+      FillIconTextButton(
+        "FillIconTextButton",
+        icon: .magnifyingglass,
+        theme: .primary,
+        font: .body.bold(),
+        height: 40) {}
       FillIconButton(
         .magnifyingglass,
         theme: .primary,
