@@ -15,28 +15,26 @@ struct ButtonGalleryView: View {
           "FillTextButton",
           theme: .primary,
           font: .body.bold(),
-          width: 140,
           height: 40) {}
         FillTextButton(
           "FillTextButton",
           theme: .primary,
           font: .body.bold(),
-          width: 140,
           height: 40,
           cornerRadius: 10) {}
         BorderTextButton(
           "BorderTextButton",
           theme: .primary,
           font: .body,
-          width: 180,
-          height: 40) {}
+          height: 40
+        ) {}
         BorderTextButton(
           "BorderTextButton",
           theme: .primary,
           font: .body,
-          width: 180,
           height: 40,
-          cornerRadius: 10) {}
+          cornerRadius: 10
+        ) {}
 
         Spacer()
       }

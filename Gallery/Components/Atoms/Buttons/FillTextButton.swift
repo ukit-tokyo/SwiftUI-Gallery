@@ -13,8 +13,8 @@ struct FillTextButton: View {
   private let title: String
   private let theme: FillButtonTheme
   private let font: Font
-  private let width: CGFloat
-  private let height: CGFloat
+  private let width: CGFloat?
+  private let height: CGFloat?
   private let cornerRadius: CGFloat?
   private let animated: Bool
   private let action: () -> Void
@@ -23,8 +23,8 @@ struct FillTextButton: View {
     _ title: String,
     theme: FillButtonTheme,
     font: Font,
-    width: CGFloat = .infinity,
-    height: CGFloat,
+    width: CGFloat? = nil,
+    height: CGFloat? = nil,
     cornerRadius: CGFloat? = nil,
     animated: Bool = true,
     action: @escaping () -> Void

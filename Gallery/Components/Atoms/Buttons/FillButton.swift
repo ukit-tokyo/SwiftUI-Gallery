@@ -29,8 +29,8 @@ struct FillButton<Label: View>: View {
 
   private let theme: FillButtonTheme
   private let font: Font
-  private let width: CGFloat
-  private let height: CGFloat
+  private let width: CGFloat?
+  private let height: CGFloat?
   private let cornerRadius: CGFloat?
   private let animated: Bool
   private let action: () -> Void
@@ -39,8 +39,8 @@ struct FillButton<Label: View>: View {
   init(
     theme: FillButtonTheme,
     font: Font,
-    width: CGFloat = .infinity,
-    height: CGFloat,
+    width: CGFloat? = nil,
+    height: CGFloat? = nil,
     cornerRadius: CGFloat? = nil,
     animated: Bool = true,
     action: @escaping () -> Void,
@@ -58,6 +58,7 @@ struct FillButton<Label: View>: View {
 
   var body: some View {
     let label = label
+      .padding()
       .frame(maxWidth: width, maxHeight: height)
       .background(isEnabled ? theme.backgroundColor : .gray)
       .foregroundColor(theme.foregroundColor)
