@@ -39,6 +39,15 @@ struct ButtonGalleryView: View {
           selectable: true) { isSelected in
             print(isSelected)
           }
+        BorderIconTextButton(
+          "BorderIconTextButton",
+          icon: .magnifyingglass,
+          theme: .primary,
+          font: .body,
+          height: 40,
+          selectable: true) { isSelected in
+            print(isSelected)
+          }
 
         Spacer()
       }
