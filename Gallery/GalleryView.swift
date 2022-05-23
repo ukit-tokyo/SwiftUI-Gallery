@@ -17,7 +17,8 @@ struct GalleryView: View {
 
   private var contents: [Row] = [
     Row(title: "Button", destination: AnyView(ButtonGalleryView())),
-    Row(title: "Navigation", destination: AnyView(NavigationGalleryView()))
+    Row(title: "Navigation", destination: AnyView(NavigationGalleryView())),
+    Row(title: "Search Bar", destination: AnyView(SearchBarGalleryView())),
   ]
 
   var body: some View {
