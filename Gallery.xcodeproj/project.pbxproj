@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61B61D4283B3863003D45E1 /* NavigationGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B61D3283B3863003D45E1 /* NavigationGalleryView.swift */; };
 		B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640E704283383120067D6F3 /* ButtonGalleryView.swift */; };
 		B672CB962835F3A100C039AF /* FillTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB952835F3A100C039AF /* FillTextButton.swift */; };
 		B672CB9A28360E6600C039AF /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB9928360E6600C039AF /* BorderButton.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B61B61D3283B3863003D45E1 /* NavigationGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationGalleryView.swift; sourceTree = "<group>"; };
 		B640E704283383120067D6F3 /* ButtonGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGalleryView.swift; sourceTree = "<group>"; };
 		B672CB952835F3A100C039AF /* FillTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillTextButton.swift; sourceTree = "<group>"; };
 		B672CB9928360E6600C039AF /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B640E704283383120067D6F3 /* ButtonGalleryView.swift */,
+				B61B61D3283B3863003D45E1 /* NavigationGalleryView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				B695E6BC2834AD76007C69AA /* FillButton.swift in Sources */,
 				B672CBA82836549900C039AF /* FillIconTextButton.swift in Sources */,
 				B695E6B828349738007C69AA /* CapsuleFillButtonStyle.swift in Sources */,
+				B61B61D4283B3863003D45E1 /* NavigationGalleryView.swift in Sources */,
 				B672CBA028363DD900C039AF /* BorderIconTextButton.swift in Sources */,
 				B695E6B62833B078007C69AA /* RoundBorderButtonStyle.swift in Sources */,
 				B672CBA228363F1100C039AF /* Icons.swift in Sources */,
