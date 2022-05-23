@@ -9,4 +9,6 @@ import SwiftUI
 
 extension Image {
   static let magnifyingglass = Image(systemName: "magnifyingglass")
+  static let gearshape = Image(systemName: "gearshape")
+  static let squareAndPencil = Image(systemName: "square.and.pencil")
 }
