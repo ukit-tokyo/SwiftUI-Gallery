@@ -12,15 +12,14 @@ struct NavigationGalleryView: View {
     Text("Navigation Gallery")
       .navigationBarTitleDisplayMode(.inline)
       .navigationTitle("Navigation Gallery")
-      .modifier(NavigationBarItemModifier(
+      .navigationBarItems(
         leftItems: [
           .init(icon: Image.magnifyingglass) {}
         ],
         rightItems: [
-          .init(icon: Image.squareAndPencil) {},
-          .init(icon: Image.gearshape) {}
+          .init(text: "保存") {}
         ]
-      ))
+      )
   }
 }
 
@@ -32,4 +31,3 @@ struct NavigationGalleryView_Previews: PreviewProvider {
       .preferredColorScheme(.dark)
   }
 }
-

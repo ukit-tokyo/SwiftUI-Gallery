@@ -7,25 +7,47 @@
 
 import SwiftUI
 
-private struct NavigationBarIconItem: Identifiable {
-  let id: Int
-  let icon: Image
-  let action: () -> Void
+// MARK: - Extension
+extension View {
+  func navigationBarItems(
+    leftItems: [NavigationBarItemSet] = [],
+    rightItems: [NavigationBarItemSet] = []
+  ) -> some View {
+    modifier(NavigationBarItemModifier(leftItems: leftItems, rightItems: rightItems))
+  }
 }
 
-struct NavigationBarItemModifier: ViewModifier {
-  struct ItemSet {
-    let icon: Image, action: () -> Void
-  }
-  private let leftItems: [NavigationBarIconItem]
-  private let rightItems: [NavigationBarIconItem]
+// MARK: - Interface
+struct NavigationBarItemSet {
+  fileprivate let icon: Image?
+  fileprivate let text: String?
+  fileprivate let action: () -> Void
 
-  init(leftItems: [ItemSet] = [], rightItems: [ItemSet] = []) {
+  init(icon: Image? = nil, text: String? = nil, action: @escaping () -> Void) {
+    self.icon = icon
+    self.text = text
+    self.action = action
+  }
+}
+
+private struct NavigationBarContentItem: Identifiable {
+  let id: Int, icon: Image?, text: String?, action: () -> Void
+}
+
+// MARK: - Modifier
+struct NavigationBarItemModifier: ViewModifier {
+  private let leftItems: [NavigationBarContentItem]
+  private let rightItems: [NavigationBarContentItem]
+
+  init(
+    leftItems: [NavigationBarItemSet] = [],
+    rightItems: [NavigationBarItemSet] = []
+  ) {
     self.leftItems = leftItems.enumerated().map {
-      NavigationBarIconItem(id: $0, icon: $1.icon, action: $1.action)
+      NavigationBarContentItem(id: $0, icon: $1.icon, text: $1.text, action: $1.action)
     }
     self.rightItems = rightItems.enumerated().map {
-      NavigationBarIconItem(id: $0, icon: $1.icon, action: $1.action)
+      NavigationBarContentItem(id: $0, icon: $1.icon, text: $1.text, action: $1.action)
     }
   }
 
@@ -36,7 +58,8 @@ struct NavigationBarItemModifier: ViewModifier {
           HStack(spacing: 0) {
             ForEach(leftItems) { item in
               Button(action: item.action) {
-                item.icon
+                if let icon = item.icon { AnyView(icon) }
+                if let text = item.text { AnyView(Text(text)) }
               }
               .foregroundColor(.label)
             }
@@ -46,7 +69,8 @@ struct NavigationBarItemModifier: ViewModifier {
           HStack(spacing: 0) {
             ForEach(rightItems) { item in
               Button(action: item.action) {
-                item.icon
+                if let icon = item.icon { AnyView(icon) }
+                if let text = item.text { AnyView(Text(text)) }
               }
               .foregroundColor(.label)
             }
