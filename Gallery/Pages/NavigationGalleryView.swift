@@ -17,6 +17,7 @@ struct NavigationGalleryView: View {
           .init(icon: Image.magnifyingglass) {}
         ],
         rightItems: [
+          .init(icon: .gearshape) {},
           .init(text: "保存") {}
         ]
       )

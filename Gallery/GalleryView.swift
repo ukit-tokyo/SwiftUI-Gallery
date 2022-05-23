@@ -28,6 +28,7 @@ struct GalleryView: View {
       .navigationBarTitleDisplayMode(.large)
       .navigationTitle("Gallery")
     }
+    .accentColor(.label)
   }
 }
 

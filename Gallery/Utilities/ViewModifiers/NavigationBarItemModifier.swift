@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 // MARK: - Extension
 extension View {
@@ -77,5 +78,13 @@ struct NavigationBarItemModifier: ViewModifier {
           }
         }
       }
+  }
+}
+
+extension UINavigationController {
+  open override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    // Navbar のバックボタンのデフォルトテキストを消す
+    navigationBar.topItem?.backButtonDisplayMode = .minimal
   }
 }
