@@ -15,7 +15,8 @@ struct NavigationGalleryView: View {
   }
 
   private var contents: [Row] = [
-    Row(title: "Mypage", destination: AnyView(MypageNavigationGalleyView()))
+    Row(title: "Mypage", destination: AnyView(MypageNavigationGalleyView())),
+    Row(title: "Search", destination: AnyView(SearchNavigationGalleyView())),
   ]
   
   var body: some View {
