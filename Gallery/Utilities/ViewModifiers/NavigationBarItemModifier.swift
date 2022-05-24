@@ -20,9 +20,9 @@ extension View {
 
 // MARK: - Interface
 struct NavigationBarItemSet {
-  fileprivate let icon: Image?
-  fileprivate let text: String?
-  fileprivate let action: () -> Void
+  let icon: Image?
+  let text: String?
+  let action: () -> Void
 
   init(icon: Image? = nil, text: String? = nil, action: @escaping () -> Void) {
     self.icon = icon
@@ -31,7 +31,7 @@ struct NavigationBarItemSet {
   }
 }
 
-private struct NavigationBarContentItem: Identifiable {
+struct NavigationBarContentItem: Identifiable {
   let id: Int, icon: Image?, text: String?, action: () -> Void
 }
 

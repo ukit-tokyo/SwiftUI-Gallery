@@ -12,4 +12,5 @@ extension Image {
   static let gearshape = Image(systemName: "gearshape")
   static let squareAndPencil = Image(systemName: "square.and.pencil")
   static let xmarkCircleFill = Image(systemName: "xmark.circle.fill")
+  static let chevronBackward = Image(systemName: "chevron.backward")
 }
