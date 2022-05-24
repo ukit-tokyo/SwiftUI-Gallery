@@ -7,30 +7,45 @@
 
 import SwiftUI
 
+// MARK: - List
 struct GalleryView: View {
-  struct Row<Destination: View>: Identifiable {
+  struct Row: Identifiable {
     var id: String { title }
     let title: String
-    let destination: Destination
+    let destination: AnyView
   }
 
-  private var rows: [Row] = [
-    Row(title: "Button", destination: ButtonGalleryView())
+  private var contents: [Row] = [
+    Row(title: "Button", destination: AnyView(ButtonGalleryView())),
+    Row(title: "Navigation", destination: AnyView(NavigationGalleryView())),
+    Row(title: "Search Bar", destination: AnyView(SearchBarGalleryView())),
   ]
 
   var body: some View {
     NavigationView {
-      List(rows) { row in
-        NavigationLink(destination: row.destination) {
-          Text(row.title)
-        }
+      List(contents) {
+        GalleryRow(title: $0.title, destination: $0.destination)
       }
       .navigationBarTitleDisplayMode(.large)
       .navigationTitle("Gallery")
     }
+    .accentColor(.label)
   }
 }
 
+// MARK: - Row
+struct GalleryRow<Destination: View>: View {
+  let title: String
+  let destination: Destination
+
+  var body: some View {
+    NavigationLink(destination: destination) {
+      Text(title)
+    }
+  }
+}
+
+// MARK: - Preview
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     GalleryView()
