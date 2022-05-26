@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct NotificationRow: View {
+  private let notification: Notification
+  private let userIconTapAction: () -> Void
+
+  init(_ notification: Notification,
+       userIconTapAction: @escaping () -> Void) {
+    self.notification = notification
+    self.userIconTapAction = userIconTapAction
+  }
+
   var body: some View {
     HStack(alignment: .top, spacing: 8) {
-      CircleImage(.swift, diameter: 50, backgroundColor: .green) {
-        print("tap image")
+      CircleImage(notification.userIcon, diameter: 50, backgroundColor: .green) {
+        userIconTapAction()
       }
 
       VStack(alignment: .leading, spacing: 4) {
-        Text("本日のピックアップにあなたのレビューが選ばれました。")
+        Text(notification.message)
           .font(.smallBold)
           .foregroundColor(.label)
         Text("約4時間前")
@@ -23,17 +32,19 @@ struct NotificationRow: View {
           .foregroundColor(.labelSecondary)
       }
 
-      RoundImage(.swift, radius: 4, sideLength: 50, backgroundColor: .green) {
-      }
+      Spacer()
+
+      RoundImage(notification.mainImage, radius: 4, sideLength: 50, backgroundColor: .green)
     }
     .background(Color.backgroundView)
-    .padding([.top, .bottom], 8)
-    .padding([.leading, .trailing], 16)
+    .padding(8)
   }
 }
 
 struct NotificationRow_Previews: PreviewProvider {
-  static let preview: some View = NotificationRow()
+  static let preview: some View = NotificationRow(
+    Notification(id: 0, userIcon: .swift, message: "本日のピックアップにあなたのレビューが選ばれました。", mainImage: .swift)
+  ) {}
 
   static var previews: some View {
     preview
