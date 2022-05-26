@@ -11,20 +11,31 @@ struct CircleImage: View {
   private let image: Image
   private let diameter: CGFloat
   private let backgroundColor: Color?
+  private let tapAction: (() -> Void)
 
-  init(_ image: Image, diameter: CGFloat, backgroundColor: Color? = nil) {
+  init(
+    _ image: Image,
+    diameter: CGFloat,
+    backgroundColor: Color? = nil,
+    tapAction: (() -> Void)? = nil
+  ) {
     self.image = image
     self.diameter = diameter
     self.backgroundColor = backgroundColor
+    self.tapAction = tapAction ?? {}
   }
 
   var body: some View {
-    image
-      .resizable()
-      .scaledToFit()
-      .frame(width: diameter, height: diameter)
-      .background(backgroundColor)
-      .clipShape(Circle())
+    Button(action: tapAction) {
+      image
+        .renderingMode(.original)
+        .resizable()
+        .scaledToFit()
+        .frame(width: diameter, height: diameter)
+        .background(backgroundColor)
+        .clipShape(Circle())
+    }
+    .buttonStyle(.plain)
   }
 }
 

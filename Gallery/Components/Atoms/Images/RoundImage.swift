@@ -13,28 +13,35 @@ struct RoundImage: View {
   private let width: CGFloat
   private let height: CGFloat
   private let backgroundColor: Color?
+  private let tapAction: (() -> Void)
 
   init(
     _ image: Image,
     radius: CGFloat,
     sideLength: CGFloat? = nil,
     size: CGSize? = nil,
-    backgroundColor: Color? = nil
+    backgroundColor: Color? = nil,
+    tapAction: (() -> Void)? = nil
   ) {
     self.image = image
     self.radius = radius
-    self.backgroundColor = backgroundColor
     self.width = sideLength ?? size?.width ?? 0
     self.height = sideLength ?? size?.height ?? 0
+    self.backgroundColor = backgroundColor
+    self.tapAction = tapAction ?? {}
   }
 
   var body: some View {
-    image
-      .resizable()
-      .scaledToFill()
-      .frame(width: width, height: height)
-      .background(backgroundColor)
-      .clipShape(RoundedRectangle(cornerRadius: radius))
+    Button(action: tapAction) {
+      image
+        .renderingMode(.original)
+        .resizable()
+        .scaledToFill()
+        .frame(width: width, height: height)
+        .background(backgroundColor)
+        .clipShape(RoundedRectangle(cornerRadius: radius))
+    }
+    .buttonStyle(.plain)
   }
 }
 

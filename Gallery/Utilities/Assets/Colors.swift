@@ -10,6 +10,7 @@ import SwiftUI
 extension Color {
   static let primaryRed = Color("Primary")
   static let label = Color("Label")
+  static let labelSecondary = Color("LabelSecondary")
   static let labelTertiary = Color("LabelTertiary")
   static let icon = Color("Icon")
   static let backgroundView = Color("BackgroundView")
