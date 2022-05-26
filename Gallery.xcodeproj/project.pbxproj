@@ -31,6 +31,7 @@
 		B6A76DEB283B8AFD00301657 /* PlaceholderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A76DEA283B8AFD00301657 /* PlaceholderModifier.swift */; };
 		B6A76DED283B947100301657 /* SearchNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A76DEC283B947100301657 /* SearchNavigationBar.swift */; };
 		B6A76DEF283B95C200301657 /* SearchNavigationGalleyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A76DEE283B95C200301657 /* SearchNavigationGalleyView.swift */; };
+		B6C06C72283F7DB8004C8816 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C71283F7DB8004C8816 /* CircleImage.swift */; };
 		B6CCCD2C283B5C6F00DEFA3E /* NavigationBarItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */; };
 		B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47828337A8C001A5951 /* GalleryApp.swift */; };
 		B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47A28337A8C001A5951 /* GalleryView.swift */; };
@@ -83,6 +84,7 @@
 		B6A76DEA283B8AFD00301657 /* PlaceholderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderModifier.swift; sourceTree = "<group>"; };
 		B6A76DEC283B947100301657 /* SearchNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationBar.swift; sourceTree = "<group>"; };
 		B6A76DEE283B95C200301657 /* SearchNavigationGalleyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationGalleyView.swift; sourceTree = "<group>"; };
+		B6C06C71283F7DB8004C8816 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBarItemModifier.swift; path = Gallery/Utilities/ViewModifiers/NavigationBarItemModifier.swift; sourceTree = SOURCE_ROOT; };
 		B6E5C47528337A8C001A5951 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C47828337A8C001A5951 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				B6A76DE5283B845400301657 /* SearchBar */,
 				B695E6AB283394CC007C69AA /* Buttons */,
+				B6C06C70283F7DA1004C8816 /* Images */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -237,6 +240,14 @@
 				B6A76DE6283B846100301657 /* SearchBar.swift */,
 			);
 			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		B6C06C70283F7DA1004C8816 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B6C06C71283F7DB8004C8816 /* CircleImage.swift */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		B6E5C46C28337A8C001A5951 = {
@@ -445,6 +456,7 @@
 				B672CBA228363F1100C039AF /* Icons.swift in Sources */,
 				B68AE2DF2834D7A000F66647 /* AnimationButtonStyle.swift in Sources */,
 				B6A76DE4283B79D600301657 /* MypageNavigationGalleyView.swift in Sources */,
+				B6C06C72283F7DB8004C8816 /* CircleImage.swift in Sources */,
 				B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */,
 				B6A76DED283B947100301657 /* SearchNavigationBar.swift in Sources */,
 				B6A76DE7283B846100301657 /* SearchBar.swift in Sources */,
