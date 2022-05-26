@@ -35,6 +35,7 @@
 		B6C06C74283F84BC004C8816 /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C73283F84BC004C8816 /* RoundImage.swift */; };
 		B6C06C78283F8DFA004C8816 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C77283F8DFA004C8816 /* Fonts.swift */; };
 		B6C06C7B283F9081004C8816 /* NotificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C7A283F9081004C8816 /* NotificationRow.swift */; };
+		B6C06C82283F9D37004C8816 /* NotificationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C81283F9D37004C8816 /* NotificationListView.swift */; };
 		B6CCCD2C283B5C6F00DEFA3E /* NavigationBarItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */; };
 		B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47828337A8C001A5951 /* GalleryApp.swift */; };
 		B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47A28337A8C001A5951 /* GalleryView.swift */; };
@@ -91,6 +92,7 @@
 		B6C06C73283F84BC004C8816 /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
 		B6C06C77283F8DFA004C8816 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		B6C06C7A283F9081004C8816 /* NotificationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRow.swift; sourceTree = "<group>"; };
+		B6C06C81283F9D37004C8816 /* NotificationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListView.swift; sourceTree = "<group>"; };
 		B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBarItemModifier.swift; path = Gallery/Utilities/ViewModifiers/NavigationBarItemModifier.swift; sourceTree = SOURCE_ROOT; };
 		B6E5C47528337A8C001A5951 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C47828337A8C001A5951 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
@@ -132,9 +134,10 @@
 		B640E703283382DD0067D6F3 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				B6C06C7E283F9CE8004C8816 /* ButtonGalleryView */,
 				B6A76DE2283B79A700301657 /* NavigationGalleries */,
-				B640E704283383120067D6F3 /* ButtonGalleryView.swift */,
-				B6A76DE8283B882000301657 /* SearchBarGalleryView.swift */,
+				B6C06C7F283F9CFA004C8816 /* SearchBarGalleryView */,
+				B6C06C80283F9D11004C8816 /* NotificationListView */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -281,6 +284,30 @@
 				B6C06C7A283F9081004C8816 /* NotificationRow.swift */,
 			);
 			path = Row;
+			sourceTree = "<group>";
+		};
+		B6C06C7E283F9CE8004C8816 /* ButtonGalleryView */ = {
+			isa = PBXGroup;
+			children = (
+				B640E704283383120067D6F3 /* ButtonGalleryView.swift */,
+			);
+			path = ButtonGalleryView;
+			sourceTree = "<group>";
+		};
+		B6C06C7F283F9CFA004C8816 /* SearchBarGalleryView */ = {
+			isa = PBXGroup;
+			children = (
+				B6A76DE8283B882000301657 /* SearchBarGalleryView.swift */,
+			);
+			path = SearchBarGalleryView;
+			sourceTree = "<group>";
+		};
+		B6C06C80283F9D11004C8816 /* NotificationListView */ = {
+			isa = PBXGroup;
+			children = (
+				B6C06C81283F9D37004C8816 /* NotificationListView.swift */,
+			);
+			path = NotificationListView;
 			sourceTree = "<group>";
 		};
 		B6E5C46C28337A8C001A5951 = {
@@ -491,6 +518,7 @@
 				B672CBA228363F1100C039AF /* Icons.swift in Sources */,
 				B6C06C78283F8DFA004C8816 /* Fonts.swift in Sources */,
 				B68AE2DF2834D7A000F66647 /* AnimationButtonStyle.swift in Sources */,
+				B6C06C82283F9D37004C8816 /* NotificationListView.swift in Sources */,
 				B6A76DE4283B79D600301657 /* MypageNavigationGalleyView.swift in Sources */,
 				B6C06C72283F7DB8004C8816 /* CircleImage.swift in Sources */,
 				B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */,
