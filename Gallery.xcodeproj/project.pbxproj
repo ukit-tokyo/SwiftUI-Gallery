@@ -32,6 +32,7 @@
 		B6A76DED283B947100301657 /* SearchNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A76DEC283B947100301657 /* SearchNavigationBar.swift */; };
 		B6A76DEF283B95C200301657 /* SearchNavigationGalleyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A76DEE283B95C200301657 /* SearchNavigationGalleyView.swift */; };
 		B6C06C72283F7DB8004C8816 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C71283F7DB8004C8816 /* CircleImage.swift */; };
+		B6C06C74283F84BC004C8816 /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C73283F84BC004C8816 /* RoundImage.swift */; };
 		B6CCCD2C283B5C6F00DEFA3E /* NavigationBarItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */; };
 		B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47828337A8C001A5951 /* GalleryApp.swift */; };
 		B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47A28337A8C001A5951 /* GalleryView.swift */; };
@@ -85,6 +86,7 @@
 		B6A76DEC283B947100301657 /* SearchNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationBar.swift; sourceTree = "<group>"; };
 		B6A76DEE283B95C200301657 /* SearchNavigationGalleyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationGalleyView.swift; sourceTree = "<group>"; };
 		B6C06C71283F7DB8004C8816 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		B6C06C73283F84BC004C8816 /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
 		B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBarItemModifier.swift; path = Gallery/Utilities/ViewModifiers/NavigationBarItemModifier.swift; sourceTree = SOURCE_ROOT; };
 		B6E5C47528337A8C001A5951 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C47828337A8C001A5951 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				B6C06C71283F7DB8004C8816 /* CircleImage.swift */,
+				B6C06C73283F84BC004C8816 /* RoundImage.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				B695E6BA28349829007C69AA /* CapsuleBorderButtonStyle.swift in Sources */,
 				B672CB9C283613CF00C039AF /* BorderTextButton.swift in Sources */,
 				B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */,
+				B6C06C74283F84BC004C8816 /* RoundImage.swift in Sources */,
 				B672CBA42836446500C039AF /* BorderIconButton.swift in Sources */,
 				B695E6BC2834AD76007C69AA /* FillButton.swift in Sources */,
 				B672CBA82836549900C039AF /* FillIconTextButton.swift in Sources */,
