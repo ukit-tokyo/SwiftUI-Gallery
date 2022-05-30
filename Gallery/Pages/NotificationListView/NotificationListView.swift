@@ -12,10 +12,11 @@ struct NotificationListView: View {
   private var viewModel = NotificationListViewModel()
 
   var body: some View {
-    List(viewModel.notifications) {
+    SeparatorlessList(viewModel.notifications, id: \.id) {
       NotificationRow($0) {
         print("user icon tapped")
       }
+      .rowSeparator()
       .listRowInsets(EdgeInsets())
       .listRowBackground(Color.backgroundView)
     }
@@ -40,7 +41,7 @@ final class NotificationListViewModel: ObservableObject {
   @Published var notifications: [Notification] = []
 
   func fetch() {
-    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
       self.notifications = [
         Notification(id: 0, userIcon: .swift, message: "メッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージメッセージ", mainImage: .swift),
         Notification(id: 1, userIcon: .swift, message: "メッセージ", mainImage: .swift),

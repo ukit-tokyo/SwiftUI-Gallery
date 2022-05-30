@@ -16,4 +16,5 @@ extension Color {
   static let backgroundView = Color("BackgroundView")
   static let backgroundInput = Color("BackgroundInput")
   static let buttonSecondary = Color("ButtonSecondary")
+  static let separator = Color("Separator")
 }

@@ -36,6 +36,8 @@
 		B6C06C78283F8DFA004C8816 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C77283F8DFA004C8816 /* Fonts.swift */; };
 		B6C06C7B283F9081004C8816 /* NotificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C7A283F9081004C8816 /* NotificationRow.swift */; };
 		B6C06C82283F9D37004C8816 /* NotificationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C81283F9D37004C8816 /* NotificationListView.swift */; };
+		B6C06C8628448748004C8816 /* SeparatorlessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C8528448748004C8816 /* SeparatorlessList.swift */; };
+		B6C06C8B284492BC004C8816 /* BorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C8A284492BC004C8816 /* BorderModifier.swift */; };
 		B6CCCD2C283B5C6F00DEFA3E /* NavigationBarItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */; };
 		B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47828337A8C001A5951 /* GalleryApp.swift */; };
 		B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47A28337A8C001A5951 /* GalleryView.swift */; };
@@ -93,6 +95,8 @@
 		B6C06C77283F8DFA004C8816 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		B6C06C7A283F9081004C8816 /* NotificationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRow.swift; sourceTree = "<group>"; };
 		B6C06C81283F9D37004C8816 /* NotificationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListView.swift; sourceTree = "<group>"; };
+		B6C06C8528448748004C8816 /* SeparatorlessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorlessList.swift; sourceTree = "<group>"; };
+		B6C06C8A284492BC004C8816 /* BorderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderModifier.swift; sourceTree = "<group>"; };
 		B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBarItemModifier.swift; path = Gallery/Utilities/ViewModifiers/NavigationBarItemModifier.swift; sourceTree = SOURCE_ROOT; };
 		B6E5C47528337A8C001A5951 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C47828337A8C001A5951 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 		B695E6A928339472007C69AA /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
+				B6C06C8428448733004C8816 /* List */,
 				B6A76DE5283B845400301657 /* SearchBar */,
 				B695E6AB283394CC007C69AA /* Buttons */,
 				B6C06C70283F7DA1004C8816 /* Images */,
@@ -212,6 +217,7 @@
 			children = (
 				B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */,
 				B6A76DEA283B8AFD00301657 /* PlaceholderModifier.swift */,
+				B6C06C8A284492BC004C8816 /* BorderModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -308,6 +314,14 @@
 				B6C06C81283F9D37004C8816 /* NotificationListView.swift */,
 			);
 			path = NotificationListView;
+			sourceTree = "<group>";
+		};
+		B6C06C8428448733004C8816 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B6C06C8528448748004C8816 /* SeparatorlessList.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		B6E5C46C28337A8C001A5951 = {
@@ -503,6 +517,7 @@
 				B695E6BA28349829007C69AA /* CapsuleBorderButtonStyle.swift in Sources */,
 				B672CB9C283613CF00C039AF /* BorderTextButton.swift in Sources */,
 				B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */,
+				B6C06C8628448748004C8816 /* SeparatorlessList.swift in Sources */,
 				B6C06C74283F84BC004C8816 /* RoundImage.swift in Sources */,
 				B672CBA42836446500C039AF /* BorderIconButton.swift in Sources */,
 				B695E6BC2834AD76007C69AA /* FillButton.swift in Sources */,
@@ -513,6 +528,7 @@
 				B672CBA028363DD900C039AF /* BorderIconTextButton.swift in Sources */,
 				B695E6B62833B078007C69AA /* RoundBorderButtonStyle.swift in Sources */,
 				B6C06C7B283F9081004C8816 /* NotificationRow.swift in Sources */,
+				B6C06C8B284492BC004C8816 /* BorderModifier.swift in Sources */,
 				B6A76DEB283B8AFD00301657 /* PlaceholderModifier.swift in Sources */,
 				B6A76DEF283B95C200301657 /* SearchNavigationGalleyView.swift in Sources */,
 				B672CBA228363F1100C039AF /* Icons.swift in Sources */,
