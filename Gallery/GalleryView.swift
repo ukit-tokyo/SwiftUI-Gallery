@@ -15,16 +15,29 @@ struct GalleryView: View {
     let destination: AnyView
   }
 
-  private var contents: [Row] = [
+  private let components: [Row] = [
     Row(title: "Button", destination: AnyView(ButtonGalleryView())),
     Row(title: "Navigation", destination: AnyView(NavigationGalleryView())),
     Row(title: "Search Bar", destination: AnyView(SearchBarGalleryView())),
   ]
 
+  private let pages: [Row] = [
+    Row(title: "Notification", destination: AnyView(NotificationListView())),
+  ]
+
   var body: some View {
     NavigationView {
-      List(contents) {
-        GalleryRow(title: $0.title, destination: $0.destination)
+      List {
+        Section(header: Text("Components")) {
+          ForEach(components) {
+            GalleryRow(title: $0.title, destination: $0.destination)
+          }
+        }
+        Section(header: Text("Pages")) {
+          ForEach(pages) {
+            GalleryRow(title: $0.title, destination: $0.destination)
+          }
+        }
       }
       .navigationBarTitleDisplayMode(.large)
       .navigationTitle("Gallery")
