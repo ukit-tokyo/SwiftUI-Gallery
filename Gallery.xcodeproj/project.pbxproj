@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B61B61D4283B3863003D45E1 /* NavigationGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B61D3283B3863003D45E1 /* NavigationGalleryView.swift */; };
 		B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640E704283383120067D6F3 /* ButtonGalleryView.swift */; };
+		B660351B288AA0C5009C5B93 /* AXRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B660351A288AA0C5009C5B93 /* AXRatingView.m */; };
 		B672CB962835F3A100C039AF /* FillTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB952835F3A100C039AF /* FillTextButton.swift */; };
 		B672CB9A28360E6600C039AF /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB9928360E6600C039AF /* BorderButton.swift */; };
 		B672CB9C283613CF00C039AF /* BorderTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB9B283613CF00C039AF /* BorderTextButton.swift */; };
@@ -68,6 +69,9 @@
 /* Begin PBXFileReference section */
 		B61B61D3283B3863003D45E1 /* NavigationGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationGalleryView.swift; sourceTree = "<group>"; };
 		B640E704283383120067D6F3 /* ButtonGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGalleryView.swift; sourceTree = "<group>"; };
+		B6603508288A9C10009C5B93 /* Gallery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gallery-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6603519288AA0C5009C5B93 /* AXRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXRatingView.h; sourceTree = "<group>"; };
+		B660351A288AA0C5009C5B93 /* AXRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXRatingView.m; sourceTree = "<group>"; };
 		B672CB952835F3A100C039AF /* FillTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillTextButton.swift; sourceTree = "<group>"; };
 		B672CB9928360E6600C039AF /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		B672CB9B283613CF00C039AF /* BorderTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextButton.swift; sourceTree = "<group>"; };
@@ -146,9 +150,27 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
+		B6603512288A9DAD009C5B93 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B6603515288AA028009C5B93 /* AXRatingView */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		B6603515288AA028009C5B93 /* AXRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				B6603519288AA0C5009C5B93 /* AXRatingView.h */,
+				B660351A288AA0C5009C5B93 /* AXRatingView.m */,
+			);
+			path = AXRatingView;
+			sourceTree = "<group>";
+		};
 		B695E6A82833945F007C69AA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B6603512288A9DAD009C5B93 /* Libraries */,
 				B695E6A928339472007C69AA /* Atoms */,
 				B6A76DDE283B763600301657 /* Molecules */,
 				B695E6AA2833947D007C69AA /* Templates */,
@@ -354,6 +376,7 @@
 				B695E6AF28339B05007C69AA /* Utilities */,
 				B6E5C47C28337A8D001A5951 /* Assets.xcassets */,
 				B6E5C47E28337A8D001A5951 /* Preview Content */,
+				B6603508288A9C10009C5B93 /* Gallery-Bridging-Header.h */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -451,6 +474,7 @@
 				TargetAttributes = {
 					B6E5C47428337A8C001A5951 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1340;
 					};
 					B6E5C48428337A8D001A5951 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -544,6 +568,7 @@
 				B672CB962835F3A100C039AF /* FillTextButton.swift in Sources */,
 				B6A76DE9283B882000301657 /* SearchBarGalleryView.swift in Sources */,
 				B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */,
+				B660351B288AA0C5009C5B93 /* AXRatingView.m in Sources */,
 				B672CBA628364B9E00C039AF /* FillIconButton.swift in Sources */,
 				B672CB9A28360E6600C039AF /* BorderButton.swift in Sources */,
 				B6A76DE1283B768C00301657 /* MypageNavigationBar.swift in Sources */,
@@ -702,8 +727,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Gallery/Preview Content\"";
 				DEVELOPMENT_TEAM = WVULB6RM2C;
 				ENABLE_PREVIEWS = YES;
@@ -721,6 +748,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tokyo.ukit.Gallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Gallery/Gallery-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -731,8 +760,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Gallery/Preview Content\"";
 				DEVELOPMENT_TEAM = WVULB6RM2C;
 				ENABLE_PREVIEWS = YES;
@@ -750,6 +781,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tokyo.ukit.Gallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Gallery/Gallery-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
