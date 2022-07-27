@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60B8EB7289140D9005A9DC5 /* RatingScoreStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B8EB6289140D9005A9DC5 /* RatingScoreStarView.swift */; };
 		B61B61D4283B3863003D45E1 /* NavigationGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B61D3283B3863003D45E1 /* NavigationGalleryView.swift */; };
 		B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640E704283383120067D6F3 /* ButtonGalleryView.swift */; };
 		B660351B288AA0C5009C5B93 /* AXRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B660351A288AA0C5009C5B93 /* AXRatingView.m */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B60B8EB6289140D9005A9DC5 /* RatingScoreStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingScoreStarView.swift; sourceTree = "<group>"; };
 		B61B61D3283B3863003D45E1 /* NavigationGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationGalleryView.swift; sourceTree = "<group>"; };
 		B640E704283383120067D6F3 /* ButtonGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGalleryView.swift; sourceTree = "<group>"; };
 		B6603508288A9C10009C5B93 /* Gallery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gallery-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -143,6 +145,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60B8EB52891408C005A9DC5 /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				B60B8EB6289140D9005A9DC5 /* RatingScoreStarView.swift */,
+			);
+			path = RatingView;
+			sourceTree = "<group>";
+		};
 		B640E703283382DD0067D6F3 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +279,7 @@
 		B6A76DDE283B763600301657 /* Molecules */ = {
 			isa = PBXGroup;
 			children = (
+				B60B8EB52891408C005A9DC5 /* RatingView */,
 				B6C06C79283F9060004C8816 /* Row */,
 				B6A76DDF283B764D00301657 /* NavigationBar */,
 			);
@@ -573,6 +584,7 @@
 				B6CCCD2C283B5C6F00DEFA3E /* NavigationBarItemModifier.swift in Sources */,
 				B672CBA028363DD900C039AF /* BorderIconTextButton.swift in Sources */,
 				B695E6B62833B078007C69AA /* RoundBorderButtonStyle.swift in Sources */,
+				B60B8EB7289140D9005A9DC5 /* RatingScoreStarView.swift in Sources */,
 				B6C06C7B283F9081004C8816 /* NotificationRow.swift in Sources */,
 				B6C06C8B284492BC004C8816 /* BorderModifier.swift in Sources */,
 				B6A76DEB283B8AFD00301657 /* PlaceholderModifier.swift in Sources */,
