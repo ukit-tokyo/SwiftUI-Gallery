@@ -23,6 +23,7 @@
 		B672CBA82836549900C039AF /* FillIconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CBA72836549900C039AF /* FillIconTextButton.swift */; };
 		B67C98F828B36870007D19B5 /* HorizontalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98F728B36870007D19B5 /* HorizontalList.swift */; };
 		B67C98FB28B37A57007D19B5 /* HorizontalListGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */; };
+		B67C98FD28B38D51007D19B5 /* HorizontalFacetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98FC28B38D51007D19B5 /* HorizontalFacetList.swift */; };
 		B68AE2DF2834D7A000F66647 /* AnimationButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */; };
 		B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */; };
 		B695E6B128339B39007C69AA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B028339B39007C69AA /* Colors.swift */; };
@@ -90,6 +91,7 @@
 		B672CBA72836549900C039AF /* FillIconTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillIconTextButton.swift; sourceTree = "<group>"; };
 		B67C98F728B36870007D19B5 /* HorizontalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalList.swift; sourceTree = "<group>"; };
 		B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListGalleryView.swift; sourceTree = "<group>"; };
+		B67C98FC28B38D51007D19B5 /* HorizontalFacetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFacetList.swift; sourceTree = "<group>"; };
 		B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFillButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6B028339B39007C69AA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				B67C98F728B36870007D19B5 /* HorizontalList.swift */,
+				B67C98FC28B38D51007D19B5 /* HorizontalFacetList.swift */,
 			);
 			path = HorizontalList;
 			sourceTree = "<group>";
@@ -626,6 +629,7 @@
 				B6A76DE7283B846100301657 /* SearchBar.swift in Sources */,
 				B695E6B128339B39007C69AA /* Colors.swift in Sources */,
 				B672CB962835F3A100C039AF /* FillTextButton.swift in Sources */,
+				B67C98FD28B38D51007D19B5 /* HorizontalFacetList.swift in Sources */,
 				B6A76DE9283B882000301657 /* SearchBarGalleryView.swift in Sources */,
 				B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */,
 				B660351B288AA0C5009C5B93 /* AXRatingView.m in Sources */,

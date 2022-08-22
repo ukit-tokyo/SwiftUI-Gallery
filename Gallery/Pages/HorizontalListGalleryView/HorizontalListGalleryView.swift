@@ -37,24 +37,73 @@ struct HorizontalListGalleryView: View {
   ]
 
   var body: some View {
-    VStack(spacing: 16) {
-      HorizontalList(
-        items: prefictures,
-        itemLayout: .init(icon: .mappinAndEllipse, font: .mediumBold)) { preficture in
-          print(preficture.value)
-        }
+    VStack(spacing: 42) {
+      VStack(spacing:16) {
+        Text("Facet Lists")
+          .font(.largeBold)
+        HorizontalFacetList(
+          prefictures,
+          icon: .mappinAndEllipse) { preficture in
+            print(preficture.value)
+          }
+        HorizontalFacetList(
+          hashtags,
+          icon: .tag) { hashtag in
+            print(hashtag.value)
+          }
+        HorizontalFacetList(
+          stations,
+          icon: .tram) { station in
+            print(station.value)
+          }
+      }
 
-      HorizontalList(
-        items: hashtags,
-        itemLayout: .init(icon: .tag, font: .mediumBold)) { hashtag in
-          print(hashtag.value)
-        }
+      VStack(spacing:16) {
+        Text("Custom Lists")
+          .font(.largeBold)
 
-      HorizontalList(
-        items: stations,
-        itemLayout: .init(icon: .tram, font: .mediumBold)) { station in
-          print(station.value)
-        }
+        HorizontalList(
+          prefictures, spacing: 6,
+          height: 45, showIndicator: false) { preficture in
+            FillIconTextButton(
+              preficture.title,
+              icon: .mappinAndEllipse,
+              theme: .primary,
+              font: .largeBold,
+              height: 45,
+              spacing: 4,
+              animated: false,
+              action: {
+                print(preficture.value)
+              }
+            )
+          }
+        HorizontalList(
+          hashtags, spacing: 24,
+          height: 45, showIndicator: true) { hashtag in
+            BorderButton(
+              theme: .primary,
+              font: .largeBold,
+              borderWidth: 2,
+              height: 44,
+              cornerRadius: 10,
+              action: { _ in print(hashtag.value) },
+              label: {
+                Text(hashtag.title)
+              })
+          }
+        HorizontalList(
+          stations, spacing: 16,
+          height: 45, showIndicator: true) { hashtag in
+            BorderIconButton(
+              .swift,
+              theme: .monotone,
+              borderWidth: 2,
+              size: 40,
+              iconSize: 20,
+              action: { _ in })
+          }
+      }
 
       Spacer()
     }
