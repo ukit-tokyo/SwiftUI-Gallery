@@ -13,5 +13,8 @@ extension Image {
   static let squareAndPencil = Image(systemName: "square.and.pencil")
   static let xmarkCircleFill = Image(systemName: "xmark.circle.fill")
   static let chevronBackward = Image(systemName: "chevron.backward")
+  static let tag = Image(systemName: "tag")
+  static let tram = Image(systemName: "tram")
+  static let mappinAndEllipse = Image(systemName: "mappin.and.ellipse")
   static let swift = Image(systemName: "swift")
 }

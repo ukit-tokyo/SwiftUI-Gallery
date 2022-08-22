@@ -21,6 +21,8 @@
 		B672CBA42836446500C039AF /* BorderIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CBA32836446500C039AF /* BorderIconButton.swift */; };
 		B672CBA628364B9E00C039AF /* FillIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CBA528364B9E00C039AF /* FillIconButton.swift */; };
 		B672CBA82836549900C039AF /* FillIconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CBA72836549900C039AF /* FillIconTextButton.swift */; };
+		B67C98F828B36870007D19B5 /* HorizontalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98F728B36870007D19B5 /* HorizontalList.swift */; };
+		B67C98FB28B37A57007D19B5 /* HorizontalListGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */; };
 		B68AE2DF2834D7A000F66647 /* AnimationButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */; };
 		B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */; };
 		B695E6B128339B39007C69AA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B028339B39007C69AA /* Colors.swift */; };
@@ -86,6 +88,8 @@
 		B672CBA32836446500C039AF /* BorderIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderIconButton.swift; sourceTree = "<group>"; };
 		B672CBA528364B9E00C039AF /* FillIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillIconButton.swift; sourceTree = "<group>"; };
 		B672CBA72836549900C039AF /* FillIconTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillIconTextButton.swift; sourceTree = "<group>"; };
+		B67C98F728B36870007D19B5 /* HorizontalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalList.swift; sourceTree = "<group>"; };
+		B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListGalleryView.swift; sourceTree = "<group>"; };
 		B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFillButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6B028339B39007C69AA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 				B6C06C7F283F9CFA004C8816 /* SearchBarGalleryView */,
 				B6C06C80283F9D11004C8816 /* NotificationListView */,
 				B660351F288AA780009C5B93 /* RatingStarGalleryView */,
+				B67C98F928B37A36007D19B5 /* HorizontalListGalleryView */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -196,6 +201,22 @@
 				B6603520288AA79E009C5B93 /* RatingStarGalleryView.swift */,
 			);
 			path = RatingStarGalleryView;
+			sourceTree = "<group>";
+		};
+		B67C98F628B3671B007D19B5 /* HorizontalList */ = {
+			isa = PBXGroup;
+			children = (
+				B67C98F728B36870007D19B5 /* HorizontalList.swift */,
+			);
+			path = HorizontalList;
+			sourceTree = "<group>";
+		};
+		B67C98F928B37A36007D19B5 /* HorizontalListGalleryView */ = {
+			isa = PBXGroup;
+			children = (
+				B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */,
+			);
+			path = HorizontalListGalleryView;
 			sourceTree = "<group>";
 		};
 		B695E6A82833945F007C69AA /* Components */ = {
@@ -279,6 +300,7 @@
 		B6A76DDE283B763600301657 /* Molecules */ = {
 			isa = PBXGroup;
 			children = (
+				B67C98F628B3671B007D19B5 /* HorizontalList */,
 				B60B8EB52891408C005A9DC5 /* RatingView */,
 				B6C06C79283F9060004C8816 /* Row */,
 				B6A76DDF283B764D00301657 /* NavigationBar */,
@@ -573,6 +595,7 @@
 				B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */,
 				B695E6BA28349829007C69AA /* CapsuleBorderButtonStyle.swift in Sources */,
 				B672CB9C283613CF00C039AF /* BorderTextButton.swift in Sources */,
+				B67C98FB28B37A57007D19B5 /* HorizontalListGalleryView.swift in Sources */,
 				B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */,
 				B6C06C8628448748004C8816 /* SeparatorlessList.swift in Sources */,
 				B6C06C74283F84BC004C8816 /* RoundImage.swift in Sources */,
@@ -587,6 +610,7 @@
 				B60B8EB7289140D9005A9DC5 /* RatingScoreStarView.swift in Sources */,
 				B6C06C7B283F9081004C8816 /* NotificationRow.swift in Sources */,
 				B6C06C8B284492BC004C8816 /* BorderModifier.swift in Sources */,
+				B67C98F828B36870007D19B5 /* HorizontalList.swift in Sources */,
 				B6A76DEB283B8AFD00301657 /* PlaceholderModifier.swift in Sources */,
 				B6A76DEF283B95C200301657 /* SearchNavigationGalleyView.swift in Sources */,
 				B672CBA228363F1100C039AF /* Icons.swift in Sources */,
