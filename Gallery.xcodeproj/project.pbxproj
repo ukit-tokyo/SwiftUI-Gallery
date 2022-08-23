@@ -24,6 +24,8 @@
 		B67C98F828B36870007D19B5 /* HorizontalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98F728B36870007D19B5 /* HorizontalList.swift */; };
 		B67C98FB28B37A57007D19B5 /* HorizontalListGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */; };
 		B67C98FD28B38D51007D19B5 /* HorizontalFacetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98FC28B38D51007D19B5 /* HorizontalFacetList.swift */; };
+		B67C990028B49554007D19B5 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98FF28B49554007D19B5 /* UnderlineTextField.swift */; };
+		B67C990328B49B6C007D19B5 /* TextFieldGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C990228B49B6C007D19B5 /* TextFieldGalleryView.swift */; };
 		B68AE2DF2834D7A000F66647 /* AnimationButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */; };
 		B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */; };
 		B695E6B128339B39007C69AA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B028339B39007C69AA /* Colors.swift */; };
@@ -92,6 +94,8 @@
 		B67C98F728B36870007D19B5 /* HorizontalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalList.swift; sourceTree = "<group>"; };
 		B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListGalleryView.swift; sourceTree = "<group>"; };
 		B67C98FC28B38D51007D19B5 /* HorizontalFacetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFacetList.swift; sourceTree = "<group>"; };
+		B67C98FF28B49554007D19B5 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		B67C990228B49B6C007D19B5 /* TextFieldGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldGalleryView.swift; sourceTree = "<group>"; };
 		B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFillButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6B028339B39007C69AA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				B6C06C80283F9D11004C8816 /* NotificationListView */,
 				B660351F288AA780009C5B93 /* RatingStarGalleryView */,
 				B67C98F928B37A36007D19B5 /* HorizontalListGalleryView */,
+				B67C990128B49B59007D19B5 /* TextFieldGalleryView */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -222,6 +227,22 @@
 			path = HorizontalListGalleryView;
 			sourceTree = "<group>";
 		};
+		B67C98FE28B47C42007D19B5 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				B67C98FF28B49554007D19B5 /* UnderlineTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		B67C990128B49B59007D19B5 /* TextFieldGalleryView */ = {
+			isa = PBXGroup;
+			children = (
+				B67C990228B49B6C007D19B5 /* TextFieldGalleryView.swift */,
+			);
+			path = TextFieldGalleryView;
+			sourceTree = "<group>";
+		};
 		B695E6A82833945F007C69AA /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +257,7 @@
 		B695E6A928339472007C69AA /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
+				B67C98FE28B47C42007D19B5 /* TextField */,
 				B6C06C8428448733004C8816 /* List */,
 				B6A76DE5283B845400301657 /* SearchBar */,
 				B695E6AB283394CC007C69AA /* Buttons */,
@@ -615,6 +637,7 @@
 				B6C06C8B284492BC004C8816 /* BorderModifier.swift in Sources */,
 				B67C98F828B36870007D19B5 /* HorizontalList.swift in Sources */,
 				B6A76DEB283B8AFD00301657 /* PlaceholderModifier.swift in Sources */,
+				B67C990028B49554007D19B5 /* UnderlineTextField.swift in Sources */,
 				B6A76DEF283B95C200301657 /* SearchNavigationGalleyView.swift in Sources */,
 				B672CBA228363F1100C039AF /* Icons.swift in Sources */,
 				B6C06C78283F8DFA004C8816 /* Fonts.swift in Sources */,
@@ -635,6 +658,7 @@
 				B660351B288AA0C5009C5B93 /* AXRatingView.m in Sources */,
 				B672CBA628364B9E00C039AF /* FillIconButton.swift in Sources */,
 				B672CB9A28360E6600C039AF /* BorderButton.swift in Sources */,
+				B67C990328B49B6C007D19B5 /* TextFieldGalleryView.swift in Sources */,
 				B6A76DE1283B768C00301657 /* MypageNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

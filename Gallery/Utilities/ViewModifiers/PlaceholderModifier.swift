@@ -10,15 +10,16 @@ import SwiftUI
 extension View {
   func placeholder(
     _ title: String,
-    showWhen: Bool,
+    font: Font = .system(size: 16),
+    showWhen isShown: Bool,
     alignment: Alignment = .leading,
     color: Color = .labelTertiary
   ) -> some View {
 
     ZStack(alignment: alignment) {
       Text(title)
-        .font(.system(size: 16))
-        .opacity(showWhen ? 1 : 0)
+        .font(font)
+        .opacity(isShown ? 1 : 0)
         .foregroundColor(color)
       self
     }
