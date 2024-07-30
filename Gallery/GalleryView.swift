@@ -27,6 +27,10 @@ struct GalleryView: View {
     Row(title: "Notification", destination: AnyView(NotificationListView())),
   ]
 
+  private let advanced: [Row] = [
+    Row(title: "Flip Book Effect", destination: AnyView(FlipBookView())),
+  ]
+
   var body: some View {
     NavigationView {
       List {
@@ -37,6 +41,11 @@ struct GalleryView: View {
         }
         Section(header: Text("Pages")) {
           ForEach(pages) {
+            GalleryRow(title: $0.title, destination: $0.destination)
+          }
+        }
+        Section(header: Text("Advanced")) {
+          ForEach(advanced) {
             GalleryRow(title: $0.title, destination: $0.destination)
           }
         }

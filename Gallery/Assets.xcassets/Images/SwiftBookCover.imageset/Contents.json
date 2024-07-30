@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "swift_book_cover.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
