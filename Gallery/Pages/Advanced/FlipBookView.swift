@@ -38,13 +38,13 @@ struct FlipBookView: View {
   func openBookToggle() {
     if show {
       // close
-      withAnimation(.linear(duration: 1.0).delay(0.49)) {
+      withAnimation(.linear(duration: 0.4).delay(0.4)) {
         show.toggle()
       }
-      withAnimation(.linear(duration: 1.0)) {
+      withAnimation(.linear(duration: 0.8)) {
         show2.toggle()
       }
-      DispatchQueue.main.asyncAfter(deadline: .now() + 0.49) {
+      DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
         close = true
       }
       withAnimation(.linear(duration: 0.4).delay(0.4)) {
@@ -53,10 +53,10 @@ struct FlipBookView: View {
     } else {
       // open
       close = false
-      withAnimation(.linear(duration: 0.5)) {
+      withAnimation(.linear(duration: 0.4)) {
         show.toggle()
       }
-      withAnimation(.linear(duration: 1.0)) {
+      withAnimation(.linear(duration: 0.8)) {
         show2.toggle()
       }
       withAnimation(.linear(duration: 0.4).delay(0.4)) {
