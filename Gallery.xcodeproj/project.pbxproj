@@ -47,6 +47,7 @@
 		B6C06C8628448748004C8816 /* SeparatorlessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C8528448748004C8816 /* SeparatorlessList.swift */; };
 		B6C06C8B284492BC004C8816 /* BorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C8A284492BC004C8816 /* BorderModifier.swift */; };
 		B6C9F13D2C5BB46100081A84 /* GlowTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9F13C2C5BB46100081A84 /* GlowTestView.swift */; };
+		B6C9F13F2C5BB97E00081A84 /* GradientBorderAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9F13E2C5BB97E00081A84 /* GradientBorderAnimationsView.swift */; };
 		B6CCCD2C283B5C6F00DEFA3E /* NavigationBarItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */; };
 		B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47828337A8C001A5951 /* GalleryApp.swift */; };
 		B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47A28337A8C001A5951 /* GalleryView.swift */; };
@@ -117,6 +118,7 @@
 		B6C06C8528448748004C8816 /* SeparatorlessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorlessList.swift; sourceTree = "<group>"; };
 		B6C06C8A284492BC004C8816 /* BorderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderModifier.swift; sourceTree = "<group>"; };
 		B6C9F13C2C5BB46100081A84 /* GlowTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowTestView.swift; sourceTree = "<group>"; };
+		B6C9F13E2C5BB97E00081A84 /* GradientBorderAnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBorderAnimationsView.swift; sourceTree = "<group>"; };
 		B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBarItemModifier.swift; path = Gallery/Utilities/ViewModifiers/NavigationBarItemModifier.swift; sourceTree = SOURCE_ROOT; };
 		B6E5C47528337A8C001A5951 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C47828337A8C001A5951 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				B608CA5E2C5926C8007D7ADF /* FlipBookView.swift */,
 				B6C9F13C2C5BB46100081A84 /* GlowTestView.swift */,
+				B6C9F13E2C5BB97E00081A84 /* GradientBorderAnimationsView.swift */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				B672CBA42836446500C039AF /* BorderIconButton.swift in Sources */,
 				B695E6BC2834AD76007C69AA /* FillButton.swift in Sources */,
 				B672CBA82836549900C039AF /* FillIconTextButton.swift in Sources */,
+				B6C9F13F2C5BB97E00081A84 /* GradientBorderAnimationsView.swift in Sources */,
 				B695E6B828349738007C69AA /* CapsuleFillButtonStyle.swift in Sources */,
 				B61B61D4283B3863003D45E1 /* NavigationGalleryView.swift in Sources */,
 				B6CCCD2C283B5C6F00DEFA3E /* NavigationBarItemModifier.swift in Sources */,
