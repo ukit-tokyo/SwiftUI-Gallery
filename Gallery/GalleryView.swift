@@ -29,6 +29,7 @@ struct GalleryView: View {
 
   private let advanced: [Row] = [
     Row(title: "Flip Book Effect", destination: AnyView(FlipBookView())),
+    Row(title: "Glow Test", destination: AnyView(FlipBookView())),
   ]
 
   var body: some View {

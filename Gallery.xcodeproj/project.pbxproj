@@ -46,6 +46,7 @@
 		B6C06C82283F9D37004C8816 /* NotificationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C81283F9D37004C8816 /* NotificationListView.swift */; };
 		B6C06C8628448748004C8816 /* SeparatorlessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C8528448748004C8816 /* SeparatorlessList.swift */; };
 		B6C06C8B284492BC004C8816 /* BorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C06C8A284492BC004C8816 /* BorderModifier.swift */; };
+		B6C9F13D2C5BB46100081A84 /* GlowTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9F13C2C5BB46100081A84 /* GlowTestView.swift */; };
 		B6CCCD2C283B5C6F00DEFA3E /* NavigationBarItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */; };
 		B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47828337A8C001A5951 /* GalleryApp.swift */; };
 		B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C47A28337A8C001A5951 /* GalleryView.swift */; };
@@ -115,6 +116,7 @@
 		B6C06C81283F9D37004C8816 /* NotificationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListView.swift; sourceTree = "<group>"; };
 		B6C06C8528448748004C8816 /* SeparatorlessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorlessList.swift; sourceTree = "<group>"; };
 		B6C06C8A284492BC004C8816 /* BorderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderModifier.swift; sourceTree = "<group>"; };
+		B6C9F13C2C5BB46100081A84 /* GlowTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowTestView.swift; sourceTree = "<group>"; };
 		B6CCCD2B283B5C6F00DEFA3E /* NavigationBarItemModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBarItemModifier.swift; path = Gallery/Utilities/ViewModifiers/NavigationBarItemModifier.swift; sourceTree = SOURCE_ROOT; };
 		B6E5C47528337A8C001A5951 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C47828337A8C001A5951 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				B608CA5E2C5926C8007D7ADF /* FlipBookView.swift */,
+				B6C9F13C2C5BB46100081A84 /* GlowTestView.swift */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */,
 				B695E6BA28349829007C69AA /* CapsuleBorderButtonStyle.swift in Sources */,
 				B672CB9C283613CF00C039AF /* BorderTextButton.swift in Sources */,
+				B6C9F13D2C5BB46100081A84 /* GlowTestView.swift in Sources */,
 				B67C98FB28B37A57007D19B5 /* HorizontalListGalleryView.swift in Sources */,
 				B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */,
 				B6C06C8628448748004C8816 /* SeparatorlessList.swift in Sources */,
@@ -874,7 +878,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WVULB6RM2C;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tokyo.ukit.GalleryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -894,7 +898,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WVULB6RM2C;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tokyo.ukit.GalleryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
