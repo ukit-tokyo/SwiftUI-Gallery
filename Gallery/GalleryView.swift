@@ -34,7 +34,14 @@ struct GalleryView: View {
   ]
 
   private let freeCanvas: [Row] = [
-    Row(title: "Achievement Step Card", destination: AnyView(AchievementStepCard())),
+    Row(title: "Freshers Task Card", destination: AnyView(FreshersTaskCard(
+      title: "ようこそ👋",
+      description: "使い方を覚えてポイントをもらおう！",
+      totalProgress: (value: 1, total: 3),
+      reward: 30,
+      taskTitle: "いいねを５回しよう",
+      taskReward: 10,
+      taskProgress: (value: 1, total: 5)))),
   ]
 
   var body: some View {
