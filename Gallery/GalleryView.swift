@@ -33,6 +33,10 @@ struct GalleryView: View {
     Row(title: "Gradient Border Animations", destination: AnyView(GradientBorderAnimationsView())),
   ]
 
+  private let freeCanvas: [Row] = [
+    Row(title: "Achievement Step Card", destination: AnyView(AchievementStepCard())),
+  ]
+
   var body: some View {
     NavigationView {
       List {
@@ -48,6 +52,11 @@ struct GalleryView: View {
         }
         Section(header: Text("Advanced")) {
           ForEach(advanced) {
+            GalleryRow(title: $0.title, destination: $0.destination)
+          }
+        }
+        Section(header: Text("Free Canvas")) {
+          ForEach(freeCanvas) {
             GalleryRow(title: $0.title, destination: $0.destination)
           }
         }
