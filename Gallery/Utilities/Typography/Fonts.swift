@@ -17,7 +17,7 @@ extension Font {
   }
 
   static func small(_ weight: Font.Weight) -> Font {
-    Font.system(size: 11.0, weight: weight)
+    Font.system(size: 12.0, weight: weight)
   }
 
   static var largeNormal: Font { large(.regular) }
