@@ -27,6 +27,7 @@
 		B67C98FB28B37A57007D19B5 /* HorizontalListGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */; };
 		B67C98FD28B38D51007D19B5 /* HorizontalFacetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98FC28B38D51007D19B5 /* HorizontalFacetList.swift */; };
 		B6814C632C6B227F00F72524 /* PagerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6814C622C6B227F00F72524 /* PagerCard.swift */; };
+		B6814C672C6B31D200F72524 /* FlatGaugeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6814C662C6B31D200F72524 /* FlatGaugeIndicator.swift */; };
 		B68AE2DF2834D7A000F66647 /* AnimationButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */; };
 		B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */; };
 		B695E6B128339B39007C69AA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B028339B39007C69AA /* Colors.swift */; };
@@ -100,6 +101,7 @@
 		B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListGalleryView.swift; sourceTree = "<group>"; };
 		B67C98FC28B38D51007D19B5 /* HorizontalFacetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFacetList.swift; sourceTree = "<group>"; };
 		B6814C622C6B227F00F72524 /* PagerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerCard.swift; sourceTree = "<group>"; };
+		B6814C662C6B31D200F72524 /* FlatGaugeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatGaugeIndicator.swift; sourceTree = "<group>"; };
 		B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFillButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6B028339B39007C69AA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -253,6 +255,14 @@
 			path = HorizontalListGalleryView;
 			sourceTree = "<group>";
 		};
+		B6814C652C6B318400F72524 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				B6814C662C6B31D200F72524 /* FlatGaugeIndicator.swift */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
 		B695E6A82833945F007C69AA /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +282,7 @@
 				B695E6AB283394CC007C69AA /* Buttons */,
 				B6C06C70283F7DA1004C8816 /* Images */,
 				B660351C288AA298009C5B93 /* RatingView */,
+				B6814C652C6B318400F72524 /* Indicator */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -634,6 +645,7 @@
 				B6814C632C6B227F00F72524 /* PagerCard.swift in Sources */,
 				B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */,
 				B6C06C8628448748004C8816 /* SeparatorlessList.swift in Sources */,
+				B6814C672C6B31D200F72524 /* FlatGaugeIndicator.swift in Sources */,
 				B6C06C74283F84BC004C8816 /* RoundImage.swift in Sources */,
 				B672CBA42836446500C039AF /* BorderIconButton.swift in Sources */,
 				B695E6BC2834AD76007C69AA /* FillButton.swift in Sources */,
