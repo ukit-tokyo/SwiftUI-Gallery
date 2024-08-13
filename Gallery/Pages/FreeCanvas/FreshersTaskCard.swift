@@ -159,29 +159,6 @@ extension FreshersTaskCard {
 
 // MARK: -
 
-struct TypographyModifier: ViewModifier {
-  let font: UIFont
-  let lineHeight: CGFloat
-
-  func body(content: Content) -> some View {
-    content
-      .font(Font(font))
-      .lineSpacing(lineHeight - font.lineHeight)
-      .padding(.vertical, (lineHeight - font.lineHeight) / 2)
-  }
-}
-
-extension View {
-  func typography(font: UIFont, lineHeight: CGFloat) -> some View {
-    ModifiedContent(
-      content: self,
-      modifier: TypographyModifier(font: font, lineHeight:  lineHeight)
-    )
-  }
-}
-
-// MARK: -
-
 #Preview {
   FreshersTaskCard(
     title: "ようこそ👋",

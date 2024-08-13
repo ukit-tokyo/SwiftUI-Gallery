@@ -42,6 +42,7 @@ struct GalleryView: View {
       taskTitle: "いいねを５回しよう",
       taskReward: 10,
       taskProgress: (value: 1, total: 5)))),
+    Row(title: "Pager Card", destination: AnyView(PagerCard())),
   ]
 
   var body: some View {
