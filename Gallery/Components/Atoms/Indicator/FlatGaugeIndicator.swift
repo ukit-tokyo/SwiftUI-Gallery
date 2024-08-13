@@ -14,17 +14,18 @@ struct FlatGaugeIndicator: View {
 
   @State private var totalWidth: CGFloat = .zero
   private var offsetX: CGFloat {
-    (totalWidth / CGFloat(stepCount)) * CGFloat(step)
+    (totalWidth / CGFloat(stepCount)) * CGFloat(step - 1)
   }
 
   var body: some View {
     ZStack(alignment: .leading) {
       Capsule()
-        .fill(.gray)
-        .frame(maxWidth: .infinity, maxHeight: height)
+        .fill(.gray.opacity(0.2))
+        .frame(maxHeight: height)
         .background(
           GeometryReader { geometry in
             Capsule()
+              .fill(.clear)
               .frame(width: geometry.size.width, height: geometry.size.height)
               .onAppear {
                 totalWidth = geometry.size.width
@@ -37,6 +38,7 @@ struct FlatGaugeIndicator: View {
         .frame(width: totalWidth / CGFloat(stepCount), height: height)
         .offset(x: offsetX)
     }
+    .frame(maxWidth: .infinity)
     .mask {
       HStack(spacing: 8) {
         ForEach(0..<stepCount, id: \.self) { _ in
