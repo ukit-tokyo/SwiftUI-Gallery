@@ -26,6 +26,7 @@
 		B67C98F828B36870007D19B5 /* HorizontalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98F728B36870007D19B5 /* HorizontalList.swift */; };
 		B67C98FB28B37A57007D19B5 /* HorizontalListGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */; };
 		B67C98FD28B38D51007D19B5 /* HorizontalFacetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C98FC28B38D51007D19B5 /* HorizontalFacetList.swift */; };
+		B6814C632C6B227F00F72524 /* PagerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6814C622C6B227F00F72524 /* PagerCard.swift */; };
 		B68AE2DF2834D7A000F66647 /* AnimationButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */; };
 		B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */; };
 		B695E6B128339B39007C69AA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B028339B39007C69AA /* Colors.swift */; };
@@ -98,6 +99,7 @@
 		B67C98F728B36870007D19B5 /* HorizontalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalList.swift; sourceTree = "<group>"; };
 		B67C98FA28B37A57007D19B5 /* HorizontalListGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListGalleryView.swift; sourceTree = "<group>"; };
 		B67C98FC28B38D51007D19B5 /* HorizontalFacetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFacetList.swift; sourceTree = "<group>"; };
+		B6814C622C6B227F00F72524 /* PagerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerCard.swift; sourceTree = "<group>"; };
 		B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFillButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6B028339B39007C69AA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				B628602A2C61EBAB00B2951B /* FreshersTaskCard.swift */,
+				B6814C622C6B227F00F72524 /* PagerCard.swift */,
 			);
 			path = FreeCanvas;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				B672CB9C283613CF00C039AF /* BorderTextButton.swift in Sources */,
 				B6C9F13D2C5BB46100081A84 /* GlowTestView.swift in Sources */,
 				B67C98FB28B37A57007D19B5 /* HorizontalListGalleryView.swift in Sources */,
+				B6814C632C6B227F00F72524 /* PagerCard.swift in Sources */,
 				B6E5C47B28337A8C001A5951 /* GalleryView.swift in Sources */,
 				B6C06C8628448748004C8816 /* SeparatorlessList.swift in Sources */,
 				B6C06C74283F84BC004C8816 /* RoundImage.swift in Sources */,
