@@ -47,7 +47,7 @@ struct PagerCard: View {
         .lineLimit(nil)
         .multilineTextAlignment(.center)
 
-      FlatGaugeIndicator(height: 6, stepCount: 3, step: currentStep)
+      FlatGaugeIndicator(height: 6, stepCount: stepCount, step: currentStep)
         .frame(maxWidth: 136)
         .padding(.vertical, 18)
 
