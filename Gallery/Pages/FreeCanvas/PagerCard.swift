@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct PagerCard: View {
-  @State var currentStep: Int = 1
-  let stepCount: Int = 3
+  @State var currentStep: Int = 0
+  let images: [ImageResource] = [.sanfrancisco01, .sanfrancisco02, .sanfrancisco03]
+  var stepCount: Int { images.count }
 
   var body: some View {
     VStack(alignment: .center, spacing: 16) {
@@ -26,17 +27,20 @@ struct PagerCard: View {
       }
 
       VStack(spacing: 0) {
-        Text("Header")
-          .typography(.subBodyBold)
-        Text("Main Title")
-          .typography(.display)
+        Text("Header").typography(.subBodyBold)
+        Text("Main Title").typography(.display)
       }
 
-      Image("")
-        .resizable()
-        .aspectRatio(311/175, contentMode: .fit)
-        .background(.gray.opacity(0.2))
-        .clipShape(RoundedRectangle(cornerRadius: 8))
+      TabView(selection: $currentStep) {
+        ForEach(Array(images.enumerated()), id: \.element) { index, image in
+          Image(image)
+            .resizable()
+            .tag(index)
+        }
+      }
+      .aspectRatio(311/175, contentMode: .fit)
+      .clipShape(RoundedRectangle(cornerRadius: 8))
+      .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
 
       Text("This is description. This is description. This is description. This is description. ")
         .typography(.subBodyBold)
@@ -59,9 +63,9 @@ struct PagerCard: View {
   }
 
   private func next() {
-    guard currentStep < stepCount else { return }
+    guard currentStep < stepCount - 1 else { return }
 
-    withAnimation(.easeInOut) {
+    withAnimation {
       currentStep += 1
     }
   }

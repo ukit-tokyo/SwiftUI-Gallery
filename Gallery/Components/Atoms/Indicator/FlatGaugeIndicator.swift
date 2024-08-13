@@ -14,7 +14,7 @@ struct FlatGaugeIndicator: View {
 
   @State private var totalWidth: CGFloat = .zero
   private var offsetX: CGFloat {
-    (totalWidth / CGFloat(stepCount)) * CGFloat(step - 1)
+    (totalWidth / CGFloat(stepCount)) * CGFloat(step)
   }
 
   var body: some View {
@@ -51,6 +51,6 @@ struct FlatGaugeIndicator: View {
 
 @available(iOS 17.0, *)
 #Preview(traits: .sizeThatFitsLayout) {
-  FlatGaugeIndicator(height: 8, stepCount: 3, step: 1)
+  FlatGaugeIndicator(height: 8, stepCount: 3, step: 0)
     .padding()
 }
