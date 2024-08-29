@@ -15,6 +15,8 @@
 		B660351B288AA0C5009C5B93 /* AXRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B660351A288AA0C5009C5B93 /* AXRatingView.m */; };
 		B660351E288AA2DC009C5B93 /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B660351D288AA2DC009C5B93 /* RatingStarView.swift */; };
 		B6603521288AA79E009C5B93 /* RatingStarGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6603520288AA79E009C5B93 /* RatingStarGalleryView.swift */; };
+		B66E5E2F2C80640B00081C12 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E5E2E2C80640B00081C12 /* LoadingView.swift */; };
+		B66E5E312C806C4700081C12 /* LoadingGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E5E302C806C4700081C12 /* LoadingGalleryView.swift */; };
 		B672CB962835F3A100C039AF /* FillTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB952835F3A100C039AF /* FillTextButton.swift */; };
 		B672CB9A28360E6600C039AF /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB9928360E6600C039AF /* BorderButton.swift */; };
 		B672CB9C283613CF00C039AF /* BorderTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CB9B283613CF00C039AF /* BorderTextButton.swift */; };
@@ -91,6 +93,8 @@
 		B660351A288AA0C5009C5B93 /* AXRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXRatingView.m; sourceTree = "<group>"; };
 		B660351D288AA2DC009C5B93 /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
 		B6603520288AA79E009C5B93 /* RatingStarGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarGalleryView.swift; sourceTree = "<group>"; };
+		B66E5E2E2C80640B00081C12 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B66E5E302C806C4700081C12 /* LoadingGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingGalleryView.swift; sourceTree = "<group>"; };
 		B672CB952835F3A100C039AF /* FillTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillTextButton.swift; sourceTree = "<group>"; };
 		B672CB9928360E6600C039AF /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		B672CB9B283613CF00C039AF /* BorderTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextButton.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 				B660351F288AA780009C5B93 /* RatingStarGalleryView */,
 				B67C98F928B37A36007D19B5 /* HorizontalListGalleryView */,
 				B680C32F2C7F245F005008EC /* SnackbarView.swift */,
+				B66E5E302C806C4700081C12 /* LoadingGalleryView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 		B6814C652C6B318400F72524 /* Indicator */ = {
 			isa = PBXGroup;
 			children = (
+				B66E5E2E2C80640B00081C12 /* LoadingView.swift */,
 				B6814C662C6B31D200F72524 /* FlatGaugeIndicator.swift */,
 			);
 			path = Indicator;
@@ -663,6 +669,7 @@
 				B6C06C74283F84BC004C8816 /* RoundImage.swift in Sources */,
 				B672CBA42836446500C039AF /* BorderIconButton.swift in Sources */,
 				B695E6BC2834AD76007C69AA /* FillButton.swift in Sources */,
+				B66E5E312C806C4700081C12 /* LoadingGalleryView.swift in Sources */,
 				B672CBA82836549900C039AF /* FillIconTextButton.swift in Sources */,
 				B6C9F13F2C5BB97E00081A84 /* GradientBorderAnimationsView.swift in Sources */,
 				B695E6B828349738007C69AA /* CapsuleFillButtonStyle.swift in Sources */,
@@ -694,6 +701,7 @@
 				B695E6B128339B39007C69AA /* Colors.swift in Sources */,
 				B672CB962835F3A100C039AF /* FillTextButton.swift in Sources */,
 				B67C98FD28B38D51007D19B5 /* HorizontalFacetList.swift in Sources */,
+				B66E5E2F2C80640B00081C12 /* LoadingView.swift in Sources */,
 				B6A76DE9283B882000301657 /* SearchBarGalleryView.swift in Sources */,
 				B6E5C47928337A8C001A5951 /* GalleryApp.swift in Sources */,
 				B660351B288AA0C5009C5B93 /* AXRatingView.m in Sources */,
