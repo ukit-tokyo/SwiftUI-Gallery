@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SnackbarView: View {
+struct SnackbarGalleryView: View {
   @State var isShowing = false
 
   var body: some View {
@@ -28,11 +28,10 @@ struct SnackbarView: View {
         Text("This is Snack Bar.")
           .typography(.bodyBold)
           .foregroundStyle(.white)
-          .padding(.horizontal, 16)
       })
   }
 }
 
 #Preview {
-  SnackbarView()
+  SnackbarGalleryView()
 }
