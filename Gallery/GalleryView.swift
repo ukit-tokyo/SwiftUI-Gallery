@@ -23,6 +23,7 @@ struct GalleryView: View {
     Row(title: "Horizontal List", destination: AnyView(HorizontalListGalleryView())),
     Row(title: "Snack Bar", destination: AnyView(SnackbarView())),
     Row(title: "Loading View", destination: AnyView(LoadingGalleryView())),
+    Row(title: "Instant Message", destination: AnyView(InstantMessageGalleryView())),
   ]
 
   private let pages: [Row] = [
