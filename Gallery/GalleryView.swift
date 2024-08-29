@@ -22,6 +22,7 @@ struct GalleryView: View {
     Row(title: "Rating Star", destination: AnyView(RatingStarGalleryView())),
     Row(title: "Horizontal List", destination: AnyView(HorizontalListGalleryView())),
     Row(title: "Snack Bar", destination: AnyView(SnackbarView())),
+    Row(title: "Loading View", destination: AnyView(LoadingGalleryView())),
   ]
 
   private let pages: [Row] = [
