@@ -48,7 +48,7 @@ jobs:
         run: |
           PRIVATE_KEY_PATH=~/private_keys
           mkdir $PRIVATE_KEY_PATH
-          echo -n '${{ secrets.ASC_API_KEY }}' | base64 --decode --output $PRIVATE_KEY_PATH/AuthKey_${{ secrets.ASC_API_KEY_ID }}.p8
+          echo -n '${{ secrets.ASC_API_KEY }}' | base64 --decode --output $PRIVATE_KEY_PATH/ApiKey_${{ secrets.ASC_API_KEY_ID }}.p8
 
       # - name: Increament Build Number
       #   run: xcrun agvtool new-version -all $BUILD_NUMBER
@@ -57,7 +57,7 @@ jobs:
         run: make archive
 
       - name: Export IPA
-        run: make export-ipa EXPORT_PATH=$RUNNER_TEMP/export API_KEY_PATH=~/private_keys/AuthKey_${{ secrets.ASC_API_KEY_ID }}.p8 API_KEY_ID=${{ secrets.ASC_API_KEY_ID }} ISSUER_ID=${{ secrets.ASC_ISSUER_ID }}
+        run: make export-ipa EXPORT_PATH=$RUNNER_TEMP/export API_KEY_PATH=~/private_keys/ApiKey_${{ secrets.ASC_API_KEY_ID }}.p8 API_KEY_ID=${{ secrets.ASC_API_KEY_ID }} ISSUER_ID=${{ secrets.ASC_ISSUER_ID }}
 
       - name: Distribute to Test Flight
         run: |
