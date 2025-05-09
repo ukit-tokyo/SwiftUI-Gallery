@@ -22,7 +22,8 @@ archive: ## archive product
 		-project $(PROJECT_PATH) \
 		-scheme "Gallery" \
 		-archivePath $(BUILD_PATH)/Gallery.xcarchive \
-		-destination 'platform=iOS Simulator,name=iPhone 16'
+		-destination 'platform=iOS Simulator,name=iPhone 16' \
+		-allowProvisioningUpdates \
 
 upload-ipa: ## export and upload IPA
 	xcodebuild -exportArchive -archivePath $(BUILD_PATH)/Gallery.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath $(BUILD_PATH)
