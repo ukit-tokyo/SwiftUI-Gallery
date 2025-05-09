@@ -10,6 +10,7 @@ jobs:
   test-flight:
     runs-on: macos-14
 
+
     steps:
       - uses: actions/checkout@v4
 
@@ -56,7 +57,7 @@ jobs:
         run: make archive
 
       - name: Export IPA
-        run: make export-ipa EXPORT_PATH=$RUNNER_TEMP/export API_KEY_PATH=$PRIVATE_KEY_PATH/AuthKey_${{ secrets.ASC_API_KEY_ID }}.p8 API_KEY_ID=${{ secrets.ASC_API_KEY_ID }} ISSUER_ID=${{ secrets.ASC_ISSUER_ID }}
+        run: make export-ipa EXPORT_PATH=$RUNNER_TEMP/export API_KEY_PATH=~/private_keys/AuthKey_${{ secrets.ASC_API_KEY_ID }}.p8 API_KEY_ID=${{ secrets.ASC_API_KEY_ID }} ISSUER_ID=${{ secrets.ASC_ISSUER_ID }}
 
       - name: Distribute to Test Flight
         run: |
