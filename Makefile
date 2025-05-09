@@ -17,7 +17,7 @@ testflight: ## distribute app to TestFlight
 
 archive: ## archive product
 	xcodebuild clean archive \
-		CODE_SIGNING_REQUIRED=NO \
+		# CODE_SIGNING_REQUIRED=NO \
 		CODE_SIGNING_ALLOWED=NO \
 		-project $(PROJECT_PATH) \
 		-scheme "Gallery" \
@@ -33,7 +33,7 @@ export-ipa: ## export IPA
 		-exportArchive \
 		-archivePath $(BUILD_PATH)/Gallery.xcarchive \
 		-exportOptionsPlist ExportOptions.plist \
-		-exportPath $(PATH)
+		-exportPath $(PATH) \
 		# -authenticationKeyPath $(API_KEY_PATH) \
 		# -authenticationKeyID $(API_KEY_ID) \
 		# -authenticationKeyIssuerID $(ISSUER_ID) \
