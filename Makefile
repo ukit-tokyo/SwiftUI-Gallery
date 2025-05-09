@@ -16,14 +16,27 @@ testflight: ## distribute app to TestFlight
 	make export-ipa
 
 archive: ## archive product
-	xcodebuild clean archive -project $(PROJECT_PATH) -scheme "Gallery" -archivePath $(BUILD_PATH)/Gallery.xcarchive -destination 'platform=iOS Simulator,name=iPhone 16'
+	xcodebuild clean archive \
+		CODE_SIGNING_REQUIRED=NO \
+		CODE_SIGNING_ALLOWED=NO \
+		-project $(PROJECT_PATH) \
+		-scheme "Gallery" \
+		-archivePath $(BUILD_PATH)/Gallery.xcarchive \
+		-destination 'platform=iOS Simulator,name=iPhone 16'
 
 upload-ipa: ## export and upload IPA
 	xcodebuild -exportArchive -archivePath $(BUILD_PATH)/Gallery.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath $(BUILD_PATH)
 
 export-ipa: ## export IPA
 	$(eval PATH := $(if $(EXPORT_PATH),$(EXPORT_PATH),$(BUILD_PATH)))
-	xcodebuild -exportArchive -archivePath $(BUILD_PATH)/Gallery.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath $(PATH)
+	xcodebuild \
+		-exportArchive \
+		-archivePath $(BUILD_PATH)/Gallery.xcarchive \
+		-exportOptionsPlist ExportOptions.plist \
+		-exportPath $(PATH) \
+		-authenticationKeyPath $(API_KEY_PATH) \
+		-authenticationKeyID "$(API_KEY_ID) \
+		-authenticationKeyIssuerID $(ISSUER_ID) \
 
 ## - cleaner
 
