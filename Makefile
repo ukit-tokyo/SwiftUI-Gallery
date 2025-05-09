@@ -33,10 +33,10 @@ export-ipa: ## export IPA
 		-exportArchive \
 		-archivePath $(BUILD_PATH)/Gallery.xcarchive \
 		-exportOptionsPlist ExportOptions.plist \
-		-exportPath $(PATH) \
-		-authenticationKeyPath $(API_KEY_PATH) \
-		-authenticationKeyID $(API_KEY_ID) \
-		-authenticationKeyIssuerID $(ISSUER_ID) \
+		-exportPath $(PATH)
+		# -authenticationKeyPath $(API_KEY_PATH) \
+		# -authenticationKeyID $(API_KEY_ID) \
+		# -authenticationKeyIssuerID $(ISSUER_ID) \
 
 ## - cleaner
 
