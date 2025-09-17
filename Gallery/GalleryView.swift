@@ -28,7 +28,7 @@ struct GalleryView: View {
 
   private let pages: [Row] = [
     Row(title: "Notification", destination: AnyView(NotificationListView())),
-    Row(title: "Page View", destination: AnyView(PageView())),
+    Row(title: "Page View", destination: AnyView(PageView(selectedId: "Page 1"))),
   ]
 
   private let advanced: [Row] = [

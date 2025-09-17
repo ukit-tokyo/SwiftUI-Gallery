@@ -14,7 +14,7 @@ struct PageView: View {
     let color: Color
   }
 
-  @State var selectedID: String = "Page 2"
+  @State var selectedID: String
   @State var indicatorOffset: CGFloat = 0
 
   var selectedIndex: Int {
@@ -29,6 +29,10 @@ struct PageView: View {
     .init(title: "Page 2", color: .blue.opacity(0.4)),
     .init(title: "Page 3", color: .blue.opacity(0.6)),
   ]
+
+  init(selectedId: String) {
+    _selectedID = State(initialValue: selectedId)
+  }
 
   var body: some View {
     GeometryReader { geometry in
@@ -73,5 +77,5 @@ struct PageView: View {
 }
 
 #Preview {
-  PageView()
+  PageView(selectedId: "Page 2")
 }
