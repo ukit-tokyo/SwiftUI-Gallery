@@ -17,18 +17,30 @@ struct PageView: View {
   @State var selectedTab: Int = 0
 
   let contents: [Content] = [
-    .init(title: "Page 1", color: .gray.opacity(0.3)),
-    .init(title: "Page 2", color: .gray.opacity(0.6)),
-    .init(title: "Page 3", color: .gray.opacity(0.9)),
+    .init(title: "Page 1", color: .blue.opacity(0.2)),
+    .init(title: "Page 2", color: .blue.opacity(0.4)),
+    .init(title: "Page 3", color: .blue.opacity(0.6)),
   ]
 
   var body: some View {
-    TabView(selection: $selectedTab) {
-      ForEach(contents) { content in
-        PageContentView(title: content.title, color: content.color)
+    VStack(spacing: 0) {
+      HStack(spacing: 0) {
+        ForEach(Array(contents.enumerated()), id: \.element.id) { index, content in
+          PageTabButton(title: content.title, selected: selectedTab == index) {
+            withAnimation {
+              selectedTab = index
+            }
+          }
+        }
       }
+      TabView(selection: $selectedTab) {
+        ForEach(Array(contents.enumerated()), id: \.element.id) { index, content in
+          PageContentView(title: content.title, color: content.color)
+            .tag(index)
+        }
+      }
+      .tabViewStyle(.page(indexDisplayMode: .never))
     }
-    .tabViewStyle(.page(indexDisplayMode: .never))
   }
 }
 
