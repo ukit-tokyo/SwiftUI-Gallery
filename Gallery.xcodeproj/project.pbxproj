@@ -41,6 +41,7 @@
 		B695E6B828349738007C69AA /* CapsuleFillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B728349738007C69AA /* CapsuleFillButtonStyle.swift */; };
 		B695E6BA28349829007C69AA /* CapsuleBorderButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B928349829007C69AA /* CapsuleBorderButtonStyle.swift */; };
 		B695E6BC2834AD76007C69AA /* FillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6BB2834AD76007C69AA /* FillButton.swift */; };
+		B6A5E3DA2E7A843000323AB6 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A5E3D92E7A843000323AB6 /* PageView.swift */; };
 		B6A76DE1283B768C00301657 /* MypageNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A76DE0283B768C00301657 /* MypageNavigationBar.swift */; };
 		B6A76DE4283B79D600301657 /* MypageNavigationGalleyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A76DE3283B79D600301657 /* MypageNavigationGalleyView.swift */; };
 		B6A76DE7283B846100301657 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A76DE6283B846100301657 /* SearchBar.swift */; };
@@ -121,6 +122,7 @@
 		B695E6B728349738007C69AA /* CapsuleFillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleFillButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6B928349829007C69AA /* CapsuleBorderButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleBorderButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6BB2834AD76007C69AA /* FillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillButton.swift; sourceTree = "<group>"; };
+		B6A5E3D92E7A843000323AB6 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		B6A76DE0283B768C00301657 /* MypageNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageNavigationBar.swift; sourceTree = "<group>"; };
 		B6A76DE3283B79D600301657 /* MypageNavigationGalleyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageNavigationGalleyView.swift; sourceTree = "<group>"; };
 		B6A76DE6283B846100301657 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -205,17 +207,18 @@
 		B640E703283382DD0067D6F3 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				B62860292C61EB8E00B2951B /* FreeCanvas */,
 				B608CA5D2C592699007D7ADF /* Advanced */,
 				B6C06C7E283F9CE8004C8816 /* ButtonGalleryView */,
+				B62860292C61EB8E00B2951B /* FreeCanvas */,
+				B67C98F928B37A36007D19B5 /* HorizontalListGalleryView */,
+				B6014E3F2C80EF160073B804 /* InstantMessageGalleryView.swift */,
+				B66E5E302C806C4700081C12 /* LoadingGalleryView.swift */,
 				B6A76DE2283B79A700301657 /* NavigationGalleries */,
-				B6C06C7F283F9CFA004C8816 /* SearchBarGalleryView */,
 				B6C06C80283F9D11004C8816 /* NotificationListView */,
 				B660351F288AA780009C5B93 /* RatingStarGalleryView */,
-				B67C98F928B37A36007D19B5 /* HorizontalListGalleryView */,
+				B6C06C7F283F9CFA004C8816 /* SearchBarGalleryView */,
 				B680C32F2C7F245F005008EC /* SnackbarView.swift */,
-				B66E5E302C806C4700081C12 /* LoadingGalleryView.swift */,
-				B6014E3F2C80EF160073B804 /* InstantMessageGalleryView.swift */,
+				B6A5E3D82E7A840A00323AB6 /* PageView */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -366,6 +369,14 @@
 				B6C06C8A284492BC004C8816 /* BorderModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		B6A5E3D82E7A840A00323AB6 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				B6A5E3D92E7A843000323AB6 /* PageView.swift */,
+			);
+			path = PageView;
 			sourceTree = "<group>";
 		};
 		B6A76DDE283B763600301657 /* Molecules */ = {
@@ -715,6 +726,7 @@
 				B660351B288AA0C5009C5B93 /* AXRatingView.m in Sources */,
 				B672CBA628364B9E00C039AF /* FillIconButton.swift in Sources */,
 				B672CB9A28360E6600C039AF /* BorderButton.swift in Sources */,
+				B6A5E3DA2E7A843000323AB6 /* PageView.swift in Sources */,
 				B6A76DE1283B768C00301657 /* MypageNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
