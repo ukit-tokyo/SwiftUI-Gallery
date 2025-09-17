@@ -291,8 +291,8 @@
 		B695E6A82833945F007C69AA /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B6603512288A9DAD009C5B93 /* Libraries */,
 				B695E6A928339472007C69AA /* Atoms */,
+				B6603512288A9DAD009C5B93 /* Libraries */,
 				B6A76DDE283B763600301657 /* Molecules */,
 				B695E6AA2833947D007C69AA /* Templates */,
 			);
@@ -302,13 +302,13 @@
 		B695E6A928339472007C69AA /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
-				B6C06C8428448733004C8816 /* List */,
-				B6A76DE5283B845400301657 /* SearchBar */,
 				B695E6AB283394CC007C69AA /* Buttons */,
 				B6C06C70283F7DA1004C8816 /* Images */,
-				B660351C288AA298009C5B93 /* RatingView */,
 				B6814C652C6B318400F72524 /* Indicator */,
+				B6C06C8428448733004C8816 /* List */,
 				B680C32C2C7F0F93005008EC /* Notification */,
+				B660351C288AA298009C5B93 /* RatingView */,
+				B6A76DE5283B845400301657 /* SearchBar */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -372,9 +372,9 @@
 			isa = PBXGroup;
 			children = (
 				B67C98F628B3671B007D19B5 /* HorizontalList */,
+				B6A76DDF283B764D00301657 /* NavigationBar */,
 				B60B8EB52891408C005A9DC5 /* RatingView */,
 				B6C06C79283F9060004C8816 /* Row */,
-				B6A76DDF283B764D00301657 /* NavigationBar */,
 			);
 			path = Molecules;
 			sourceTree = "<group>";
@@ -495,14 +495,14 @@
 		B6E5C47728337A8C001A5951 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				B6E5C47C28337A8D001A5951 /* Assets.xcassets */,
+				B695E6A82833945F007C69AA /* Components */,
+				B6603508288A9C10009C5B93 /* Gallery-Bridging-Header.h */,
 				B6E5C47828337A8C001A5951 /* GalleryApp.swift */,
 				B6E5C47A28337A8C001A5951 /* GalleryView.swift */,
 				B640E703283382DD0067D6F3 /* Pages */,
-				B695E6A82833945F007C69AA /* Components */,
-				B695E6AF28339B05007C69AA /* Utilities */,
-				B6E5C47C28337A8D001A5951 /* Assets.xcassets */,
 				B6E5C47E28337A8D001A5951 /* Preview Content */,
-				B6603508288A9C10009C5B93 /* Gallery-Bridging-Header.h */,
+				B695E6AF28339B05007C69AA /* Utilities */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
