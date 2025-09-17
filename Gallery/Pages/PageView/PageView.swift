@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct PageView: View {
+  @State var selectedTab: Int = 0
+
   var body: some View {
-    Text( /*@START_MENU_TOKEN@*/"Hello, World!" /*@END_MENU_TOKEN@*/)
+    TabView(selection: $selectedTab) {
+      Text("Page-0")
+        .tag(0)
+      Text("Page-1")
+        .tag(1)
+      Text("Page-2")
+        .tag(2)
+    }
+    .tabViewStyle(.page(indexDisplayMode: .never))
   }
 }
 
