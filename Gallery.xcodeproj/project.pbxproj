@@ -37,6 +37,8 @@
 		B68AE2DF2834D7A000F66647 /* AnimationButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */; };
 		B68FF98B2E7A8BF900D2921F /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FF98A2E7A8BF900D2921F /* PageContentView.swift */; };
 		B68FF98D2E7A93CA00D2921F /* PageTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FF98C2E7A93CA00D2921F /* PageTabButton.swift */; };
+		B692AA2C2F640C5300940E15 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B692AA2B2F640C5300940E15 /* FlowLayout.swift */; };
+		B692AA2E2F640D0500940E15 /* TagLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B692AA2D2F640D0500940E15 /* TagLayoutView.swift */; };
 		B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */; };
 		B695E6B128339B39007C69AA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B028339B39007C69AA /* Colors.swift */; };
 		B695E6B62833B078007C69AA /* RoundBorderButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695E6B52833B078007C69AA /* RoundBorderButtonStyle.swift */; };
@@ -68,6 +70,7 @@
 		B6E5C48A28337A8D001A5951 /* GalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C48928337A8D001A5951 /* GalleryTests.swift */; };
 		B6E5C49428337A8D001A5951 /* GalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C49328337A8D001A5951 /* GalleryUITests.swift */; };
 		B6E5C49628337A8D001A5951 /* GalleryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E5C49528337A8D001A5951 /* GalleryUITestsLaunchTests.swift */; };
+		B6F11A9A2F3B729E001E0252 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F11A992F3B729E001E0252 /* CanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,8 @@
 		B68AE2DE2834D7A000F66647 /* AnimationButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButtonStyle.swift; sourceTree = "<group>"; };
 		B68FF98A2E7A8BF900D2921F /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		B68FF98C2E7A93CA00D2921F /* PageTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabButton.swift; sourceTree = "<group>"; };
+		B692AA2B2F640C5300940E15 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		B692AA2D2F640D0500940E15 /* TagLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayoutView.swift; sourceTree = "<group>"; };
 		B695E6AD28339608007C69AA /* RoundFillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFillButtonStyle.swift; sourceTree = "<group>"; };
 		B695E6B028339B39007C69AA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B695E6B52833B078007C69AA /* RoundBorderButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBorderButtonStyle.swift; sourceTree = "<group>"; };
@@ -154,6 +159,7 @@
 		B6E5C48F28337A8D001A5951 /* GalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E5C49328337A8D001A5951 /* GalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryUITests.swift; sourceTree = "<group>"; };
 		B6E5C49528337A8D001A5951 /* GalleryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6F11A992F3B729E001E0252 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +229,7 @@
 				B6C06C7F283F9CFA004C8816 /* SearchBarGalleryView */,
 				B680C32F2C7F245F005008EC /* SnackbarView.swift */,
 				B6A5E3D82E7A840A00323AB6 /* PageView */,
+				B692AA2D2F640D0500940E15 /* TagLayoutView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -323,6 +330,7 @@
 		B695E6AA2833947D007C69AA /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				B692AA2B2F640C5300940E15 /* FlowLayout.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -520,6 +528,7 @@
 				B640E703283382DD0067D6F3 /* Pages */,
 				B6E5C47E28337A8D001A5951 /* Preview Content */,
 				B695E6AF28339B05007C69AA /* Utilities */,
+				B6F11A992F3B729E001E0252 /* CanvasView.swift */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -683,6 +692,7 @@
 				B66E5E332C80E86300081C12 /* InstantMessageView.swift in Sources */,
 				B640E705283383120067D6F3 /* ButtonGalleryView.swift in Sources */,
 				B695E6BA28349829007C69AA /* CapsuleBorderButtonStyle.swift in Sources */,
+				B692AA2C2F640C5300940E15 /* FlowLayout.swift in Sources */,
 				B672CB9C283613CF00C039AF /* BorderTextButton.swift in Sources */,
 				B6C9F13D2C5BB46100081A84 /* GlowTestView.swift in Sources */,
 				B67C98FB28B37A57007D19B5 /* HorizontalListGalleryView.swift in Sources */,
@@ -718,8 +728,10 @@
 				B660351E288AA2DC009C5B93 /* RatingStarView.swift in Sources */,
 				B6C06C82283F9D37004C8816 /* NotificationListView.swift in Sources */,
 				B6A76DE4283B79D600301657 /* MypageNavigationGalleyView.swift in Sources */,
+				B6F11A9A2F3B729E001E0252 /* CanvasView.swift in Sources */,
 				B68FF98D2E7A93CA00D2921F /* PageTabButton.swift in Sources */,
 				B6C06C72283F7DB8004C8816 /* CircleImage.swift in Sources */,
+				B692AA2E2F640D0500940E15 /* TagLayoutView.swift in Sources */,
 				B695E6AE28339608007C69AA /* RoundFillButtonStyle.swift in Sources */,
 				B6A76DED283B947100301657 /* SearchNavigationBar.swift in Sources */,
 				B6603521288AA79E009C5B93 /* RatingStarGalleryView.swift in Sources */,

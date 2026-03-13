@@ -47,7 +47,7 @@ struct BorderTextButton: View {
 
   var body: some View {
     BorderButton(
-      theme: .primary,
+      theme: theme,
       font: font,
       borderWidth: borderWidth,
       width: width,
