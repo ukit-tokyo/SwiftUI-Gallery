@@ -24,11 +24,13 @@ struct GalleryView: View {
     Row(title: "Snack Bar", destination: AnyView(SnackbarGalleryView())),
     Row(title: "Loading View", destination: AnyView(LoadingGalleryView())),
     Row(title: "Instant Message", destination: AnyView(InstantMessageGalleryView())),
+    Row(title: "Tag Layout", destination: AnyView(TagLayoutView())),
   ]
 
   private let pages: [Row] = [
     Row(title: "Notification", destination: AnyView(NotificationListView())),
     Row(title: "Page View", destination: AnyView(PageView(selectedId: "Page 1"))),
+    Row(title: "Free Canvas", destination: AnyView(CanvasView())),
   ]
 
   private let advanced: [Row] = [
