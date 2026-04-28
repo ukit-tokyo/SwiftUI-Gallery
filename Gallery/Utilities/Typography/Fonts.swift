@@ -11,23 +11,36 @@ extension Font {
   static func large(_ weight: Font.Weight) -> Font {
     Font.system(size: 17.0, weight: weight)
   }
-
+  
   static func medium(_ weight: Font.Weight) -> Font {
     Font.system(size: 14.0, weight: weight)
   }
-
+  
   static func small(_ weight: Font.Weight) -> Font {
     Font.system(size: 12.0, weight: weight)
   }
-
+  
   static var largeNormal: Font { large(.regular) }
   static var largeBold: Font { large(.bold) }
-
+  
   static var mediumNormal: Font { medium(.regular) }
   static var mediumBold: Font { medium(.bold) }
-
+  
   static var smallNormal: Font { small(.regular) }
   static var smallBold: Font { small(.bold) }
+}
+
+extension Font {
+  var bold: Font { self.weight(.bold) }
+
+  static let display: Font = .system(size: 24, weight: .bold)
+  static let title: Font = .system(size: 20, weight: .bold)
+  static let subtitle: Font = .system(size: 18, weight: .bold)
+
+  static let body: Font = .system(size: 16)
+  static let subBody: Font = .system(size: 14)
+  static let caption: Font = .system(size: 12)
+  static let subCaption: Font = .system(size: 10)
 }
 
 extension UIFont {
