@@ -25,6 +25,7 @@ struct GalleryView: View {
     Row(title: "Loading View", destination: AnyView(LoadingGalleryView())),
     Row(title: "Instant Message", destination: AnyView(InstantMessageGalleryView())),
     Row(title: "Tag Layout", destination: AnyView(TagLayoutView())),
+    Row(title: "Code Input", destination: AnyView(CodeInputView())),
   ]
 
   private let pages: [Row] = [
